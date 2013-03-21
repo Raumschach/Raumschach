@@ -1,0 +1,5 @@
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.dll
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.pdb
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.csprojResolveAssemblyReference.cache
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.dll
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.pdb

@@ -16,5 +16,12 @@ namespace RaumschachForm
         {
             InitializeComponent();
         }
+
+       
+
+        private void SelectedSquare(object sender, EventArgs e)
+        {
+
+        }
     }
 }

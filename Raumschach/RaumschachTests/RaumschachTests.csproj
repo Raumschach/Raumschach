@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>9ec501b0-2c0c-4e21-9d87-b5133fbfd981</ProjectGuid>
+    <ProjectGuid>{A8C7C789-EB82-4C75-BBD7-170F0FCDD2DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RaumschachTests</RootNamespace>
