@@ -10,19 +10,22 @@ using System.Windows.Forms;
 
 namespace RaumschachForm
 {
-    public partial class Form1 : Form
+    public partial class BoardViewer : Form
     {
         private bool moveNextClick = false;
         private Image pieceToMove;
         private Panel panelToClear;
+        private Board _board;
 
 
-        public Form1()
+        public BoardViewer()
         {
             InitializeComponent();
+            _board = new Board();
+
             var variable=Image.FromFile
    (Environment.CurrentDirectory+@"\Images\PawnW.png");
-            panel1.BackgroundImage = variable;
+            Aa1.BackgroundImage = variable;
             
 
 

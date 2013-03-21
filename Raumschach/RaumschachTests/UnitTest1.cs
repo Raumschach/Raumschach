@@ -1,19 +1,21 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System.Windows.Forms;
 using RaumschachForm;
 
 namespace RaumschachTests
 {
-    [TestClass]
+    [TestFixture()]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestPanelClick(){
-            var target = new RaumschachForm.Form1();
-         
-            var Panel = new Panel();
-            Panel.Click += target.SelectedSquare;
+        [Test()]
+        public void testNewBoard(){
+            var target = new RaumschachForm.Board();
+            var cell = new RaumschachForm.Cell("Aa1");
+            cell.addPiece("WhitePawn");
+            var boardCell = target._board[0, 0];
+            Assert.AreEqual(cell.getPiece(), boardCell.getPiece());
+            
         }
     }
 }
