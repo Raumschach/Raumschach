@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Diagnostics;
 
 namespace RaumschachForm
 {
@@ -27,6 +28,44 @@ namespace RaumschachForm
 
         public void movePiece(string cellName1, string cellName2)
         {
+            var cell1 = _board[getCellRow(cellName1), getCellCol(cellName1)];
+            var cell2 = _board[getCellRow(cellName2), getCellCol(cellName2)];
+            var temp = cell1.getPiece();
+            cell1.addPiece(null);
+            cell2.addPiece(temp);
+            Debug.WriteLine(cell1.getPiece());
         }
+
+        private int getCellRow(string cellName)
+        {
+            var row = cellName.Substring(1, 1);
+            int rowNumber = 0;
+            switch (row)
+            {
+                case "a":
+                    rowNumber = 0;
+                    break;
+                case "b":
+                    rowNumber = 1;
+                    break;
+                case "c":
+                    rowNumber = 2;
+                    break;
+                case "d":
+                    rowNumber = 3;
+                    break;
+                case "e":
+                    rowNumber = 4;
+                    break;
+            }
+            return rowNumber;
+        }
+
+        private int getCellCol(string cellName)
+        {
+            var col = Convert.ToInt32(cellName.Substring(2, 1)) - 1;
+            return col;
+        }
+
     }
 }

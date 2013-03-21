@@ -35,6 +35,7 @@ namespace RaumschachForm
 
         public void SelectedSquare(object sender, EventArgs e)
         {
+            _board.movePiece("Aa1", "Aa2");
             var currentPanel = (Panel)sender;
             if (currentPanel == panelToClear) return;
             if (moveNextClick)
