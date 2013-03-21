@@ -34,5 +34,29 @@ namespace RaumschachTests
             Assert.IsNull(target._board[0, 1].getPiece());
             Assert.IsNull(target._board[0, 2].getPiece());
         }
+        [Test()]
+        public void movePieceFromNullToPiece()
+        {
+            var target = new RaumschachForm.Board();
+            target.movePiece("Aa2", "Aa1");
+            Assert.AreEqual("WhitePawn", target._board[0, 0].getPiece());
+            Assert.IsNull(target._board[0, 1].getPiece());
+        }
+        [Test()]
+        public void movePieceToItself()
+        {
+            var target = new RaumschachForm.Board();
+            target.movePiece("Aa1", "Aa1");
+            Assert.AreEqual("WhitePawn", target._board[0, 0].getPiece());
+        }
+        [Test()]
+        public void movePieceToPiece()
+        {
+            var target = new RaumschachForm.Board();
+            target.movePiece("Aa1", "Ab1");
+            Assert.IsNull(target._board[0, 0].getPiece());
+            Assert.AreEqual("WhitePawn", target._board[1, 0].getPiece());
+
+        }
     }
 }

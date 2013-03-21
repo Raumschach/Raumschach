@@ -24,6 +24,7 @@ namespace RaumschachForm
             };
 
             _board[0, 0].addPiece("WhitePawn");
+            _board[1, 0].addPiece("WhiteBishop");
         }
 
         public void movePiece(string cellName1, string cellName2)
@@ -31,6 +32,7 @@ namespace RaumschachForm
             var cell1 = _board[getCellRow(cellName1), getCellCol(cellName1)];
             var cell2 = _board[getCellRow(cellName2), getCellCol(cellName2)];
             var temp = cell1.getPiece();
+            if (temp == null) return;
             cell1.addPiece(null);
             cell2.addPiece(temp);
             Debug.WriteLine(cell1.getPiece());
