@@ -64,7 +64,6 @@
             this.panel1.Size = new System.Drawing.Size(50, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel2
             // 
@@ -75,7 +74,6 @@
             this.panel2.Size = new System.Drawing.Size(50, 50);
             this.panel2.TabIndex = 1;
             this.panel2.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel3
             // 
@@ -86,7 +84,6 @@
             this.panel3.Size = new System.Drawing.Size(50, 50);
             this.panel3.TabIndex = 3;
             this.panel3.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel4
             // 
@@ -97,7 +94,6 @@
             this.panel4.Size = new System.Drawing.Size(50, 50);
             this.panel4.TabIndex = 2;
             this.panel4.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel5
             // 
@@ -108,7 +104,6 @@
             this.panel5.Size = new System.Drawing.Size(50, 50);
             this.panel5.TabIndex = 4;
             this.panel5.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel6
             // 
@@ -119,7 +114,6 @@
             this.panel6.Size = new System.Drawing.Size(50, 50);
             this.panel6.TabIndex = 9;
             this.panel6.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel7
             // 
@@ -130,7 +124,6 @@
             this.panel7.Size = new System.Drawing.Size(50, 50);
             this.panel7.TabIndex = 8;
             this.panel7.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel8
             // 
@@ -141,7 +134,6 @@
             this.panel8.Size = new System.Drawing.Size(50, 50);
             this.panel8.TabIndex = 6;
             this.panel8.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel9
             // 
@@ -152,7 +144,6 @@
             this.panel9.Size = new System.Drawing.Size(50, 50);
             this.panel9.TabIndex = 7;
             this.panel9.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel10
             // 
@@ -163,7 +154,6 @@
             this.panel10.Size = new System.Drawing.Size(50, 50);
             this.panel10.TabIndex = 5;
             this.panel10.Click += new System.EventHandler(this.SelectedSquare);
-            
             // 
             // panel21
             // 

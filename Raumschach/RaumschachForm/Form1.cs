@@ -19,9 +19,10 @@ namespace RaumschachForm
 
        
 
-        private void SelectedSquare(object sender, EventArgs e)
+        public void SelectedSquare(object sender, EventArgs e)
         {
-
+            ((Panel)sender).BackColor = Color.Yellow;
         }
+
     }
 }
