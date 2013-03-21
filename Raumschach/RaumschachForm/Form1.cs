@@ -21,7 +21,7 @@ namespace RaumschachForm
         {
             InitializeComponent();
             var variable=Image.FromFile
-   (Environment.CurrentDirectory+@"\Images\Pawn.png");
+   (Environment.CurrentDirectory+@"\Images\PawnW.png");
             panel1.BackgroundImage = variable;
             
 
