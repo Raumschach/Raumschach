@@ -58,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(276, 133);
             this.panel1.Name = "panel1";
@@ -68,6 +69,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(322, 133);
             this.panel2.Name = "panel2";
@@ -78,6 +80,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(417, 133);
             this.panel3.Name = "panel3";
@@ -88,6 +91,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(371, 133);
             this.panel4.Name = "panel4";
@@ -98,6 +102,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Location = new System.Drawing.Point(466, 133);
             this.panel5.Name = "panel5";
@@ -108,6 +113,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Location = new System.Drawing.Point(466, 182);
             this.panel6.Name = "panel6";
@@ -118,6 +124,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Location = new System.Drawing.Point(417, 182);
             this.panel7.Name = "panel7";
@@ -128,6 +135,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Location = new System.Drawing.Point(322, 182);
             this.panel8.Name = "panel8";
@@ -138,6 +146,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Location = new System.Drawing.Point(371, 182);
             this.panel9.Name = "panel9";
@@ -148,6 +157,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Location = new System.Drawing.Point(276, 182);
             this.panel10.Name = "panel10";
@@ -158,6 +168,7 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.White;
+            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Location = new System.Drawing.Point(466, 280);
             this.panel21.Name = "panel21";
@@ -168,6 +179,7 @@
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.Black;
+            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Location = new System.Drawing.Point(417, 280);
             this.panel22.Name = "panel22";
@@ -178,6 +190,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Black;
+            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Location = new System.Drawing.Point(322, 280);
             this.panel23.Name = "panel23";
@@ -188,6 +201,7 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.White;
+            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel24.Location = new System.Drawing.Point(371, 280);
             this.panel24.Name = "panel24";
@@ -198,6 +212,7 @@
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.White;
+            this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Location = new System.Drawing.Point(276, 280);
             this.panel25.Name = "panel25";
@@ -208,6 +223,7 @@
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.Black;
+            this.panel26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Location = new System.Drawing.Point(466, 231);
             this.panel26.Name = "panel26";
@@ -218,6 +234,7 @@
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.White;
+            this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel27.Location = new System.Drawing.Point(417, 231);
             this.panel27.Name = "panel27";
@@ -228,6 +245,7 @@
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.White;
+            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel28.Location = new System.Drawing.Point(322, 231);
             this.panel28.Name = "panel28";
@@ -238,6 +256,7 @@
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.Color.Black;
+            this.panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel29.Location = new System.Drawing.Point(371, 231);
             this.panel29.Name = "panel29";
@@ -248,6 +267,7 @@
             // panel30
             // 
             this.panel30.BackColor = System.Drawing.Color.Black;
+            this.panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel30.Location = new System.Drawing.Point(276, 231);
             this.panel30.Name = "panel30";
@@ -258,6 +278,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Black;
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Location = new System.Drawing.Point(466, 329);
             this.panel11.Name = "panel11";
@@ -268,6 +289,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Location = new System.Drawing.Point(417, 329);
             this.panel12.Name = "panel12";
@@ -278,6 +300,7 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Location = new System.Drawing.Point(322, 329);
             this.panel13.Name = "panel13";
@@ -288,6 +311,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Black;
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Location = new System.Drawing.Point(371, 329);
             this.panel14.Name = "panel14";
@@ -298,6 +322,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Black;
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Location = new System.Drawing.Point(276, 329);
             this.panel15.Name = "panel15";
