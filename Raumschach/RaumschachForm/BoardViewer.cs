@@ -26,33 +26,27 @@ namespace RaumschachForm
             var variable=Image.FromFile
    (Environment.CurrentDirectory+@"\Images\PawnW.png");
             Aa1.BackgroundImage = variable;
-            
-
-
         }
 
        
 
         public void SelectedSquare(object sender, EventArgs e)
         {
-            _board.movePiece("Aa1", "Aa2");
             var currentPanel = (Panel)sender;
-            if (currentPanel == panelToClear) return;
+            if (currentPanel == panelToClear) 
+                return;
             if (moveNextClick)
             {
-
                 moveNextClick = false;
                 currentPanel.BackgroundImage = pieceToMove;
                 panelToClear.BackgroundImage = null;
             }
-            if (currentPanel.BackgroundImage != null)
+            else if (currentPanel.BackgroundImage != null)
             {
                 moveNextClick = true;
                 pieceToMove = currentPanel.BackgroundImage;
                 panelToClear = currentPanel;
             }
-
-
 
         }
 
