@@ -58,5 +58,21 @@ namespace RaumschachTests
             Assert.AreEqual("WhitePawn", target._board[1, 0].getPiece());
 
         }
+        [Test()]
+        public void TestnewPawn()
+        {
+            var target = new RaumschachForm.Pawn(true, "test");
+            Assert.IsNotNull(target);
+            Assert.IsTrue(target.white);
+
+        }
+        [Test()]
+        public void TestPiecegetMoves()
+        {
+           var target = new RaumschachForm.Pawn(true, "Aa2");
+            Assert.AreEqual(new List() { "Aa3" }, target.getmoves());
+           
+
+        }
     }
 }

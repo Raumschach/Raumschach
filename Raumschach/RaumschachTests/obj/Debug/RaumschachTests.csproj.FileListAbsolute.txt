@@ -14,3 +14,5 @@ C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Deb
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.pdb
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.dll
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.xml
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.dll
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.xml

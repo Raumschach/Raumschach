@@ -1,6 +1,5 @@
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe.config
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csprojResolveAssemblyReference.cache
-C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Form1.resources
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe
@@ -16,3 +15,4 @@ C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debu
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.BoardViewer.resources
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.BoardViewer.resources
