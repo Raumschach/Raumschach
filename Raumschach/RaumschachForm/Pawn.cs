@@ -18,8 +18,23 @@ namespace RaumschachForm
         public Pawn(bool white, string currentPos){
             base.white = white;
             base.currentPos = currentPos;
-            MessageBox.Show(Environment.CurrentDirectory);
     }
+         public override List<string> getmoves(Board board){
+             var boardNum = board.getBoard(base.currentPos);
+             var rowNum = board.getCellRow(base.currentPos);
+             var colNum = board.getCellCol(base.currentPos);
+             var moves = new List<String>();
+
+             if (!board._board[boardNum + 1][rowNum, colNum].hasPiece())
+             {
+                 moves.Add(board._board[boardNum + 1][rowNum, colNum].getName());
+             }
+             if (!board._board[boardNum][rowNum, colNum+1].hasPiece())
+             {
+                 moves.Add(board._board[boardNum][rowNum, colNum+1].getName());
+             }
+             return moves;
+         }
 
 
     }

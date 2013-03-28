@@ -25,5 +25,15 @@ namespace RaumschachForm
         {
             return _piece;
         }
+
+        public string getName()
+        {
+            return _name;
+        }
+
+        public bool hasPiece()
+        {
+            return _piece != null;
+        }
     }
 }

@@ -7,15 +7,12 @@ using System.Drawing;
 
 namespace RaumschachForm
 {
-    public class Piece
+    public abstract class Piece
     {
         public Image myImage;
         public bool white;
         public string currentPos;
-        public List<String> getmoves()
-        {
-            return null;
-        }
+        public abstract List<String> getmoves(Board board);
         public Image getImage()
         {
             return null;
