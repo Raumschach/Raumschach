@@ -10,18 +10,19 @@ namespace RaumschachForm
     public class Cell
     {
         private string _name;
-        private string _piece;
+        private Piece _piece;
         public Cell(string name)
         {
             _name = name;
         }
 
-        public void addPiece(string piece)
+        public void addPiece(Piece piece)
         {
             _piece = piece;
+            if (piece != null) _piece.currentPos = _name;
         }
 
-        public string getPiece()
+        public Piece getPiece()
         {
             return _piece;
         }

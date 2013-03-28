@@ -25,16 +25,69 @@ namespace RaumschachForm
              var colNum = board.getCellCol(base.currentPos);
              var moves = new List<String>();
 
-             if (!board._board[boardNum + 1][rowNum, colNum].hasPiece())
+             //Black Moves
+             if (!white && boardNum < 4 && !board._board[boardNum + 1][rowNum, colNum].hasPiece())
              {
                  moves.Add(board._board[boardNum + 1][rowNum, colNum].getName());
              }
-             if (!board._board[boardNum][rowNum, colNum+1].hasPiece())
+             if (!white && colNum < 4 && !board._board[boardNum][rowNum, colNum + 1].hasPiece())
              {
-                 moves.Add(board._board[boardNum][rowNum, colNum+1].getName());
+                 moves.Add(board._board[boardNum][rowNum, colNum + 1].getName());
+             }
+             //Take Down and right
+             if (!white && boardNum < 4 && rowNum < 4 && board._board[boardNum + 1][rowNum + 1, colNum].hasPiece() && board._board[boardNum + 1][rowNum + 1, colNum].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum + 1][rowNum + 1, colNum].getName());
+             }
+             //Take Up and left
+             if (!white && boardNum < 4 && rowNum > 0 && board._board[boardNum + 1][rowNum - 1, colNum].hasPiece() && board._board[boardNum + 1][rowNum - 1, colNum].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum + 1][rowNum - 1, colNum].getName());
+             }
+             //Take foward and Right
+             if (!white && rowNum < 4 && colNum < 4 && board._board[boardNum][rowNum + 1, colNum + 1].hasPiece() && board._board[boardNum][rowNum + 1, colNum + 1].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum][rowNum + 1, colNum + 1].getName());
+             }
+             //Take foward and Left
+             if (!white && rowNum > 0 && colNum < 4 && board._board[boardNum][rowNum - 1, colNum + 1].hasPiece() && board._board[boardNum][rowNum - 1, colNum + 1].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum][rowNum - 1, colNum + 1]
+                     .getName());
+             }
+
+             //White Moves
+             if (white && boardNum > 0 && !board._board[boardNum - 1][rowNum, colNum].hasPiece())
+             {
+                 moves.Add(board._board[boardNum - 1][rowNum, colNum].getName());
+             }
+             if (white && colNum > 0 && !board._board[boardNum][rowNum, colNum - 1].hasPiece())
+             {
+                 moves.Add(board._board[boardNum][rowNum, colNum - 1].getName());
+             }
+             //Take Up and right
+             if (white && boardNum > 0 && rowNum > 0 && board._board[boardNum - 1][rowNum - 1, colNum].hasPiece() && !board._board[boardNum - 1][rowNum - 1, colNum].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum - 1][rowNum - 1, colNum].getName());
+             }
+             //Take Up and left
+             if (white && boardNum > 0 && rowNum < 4 && board._board[boardNum - 1][rowNum + 1, colNum].hasPiece() && !board._board[boardNum - 1][rowNum + 1, colNum].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum - 1][rowNum + 1, colNum].getName());
+             }
+             //Take foward and Right
+             if (white && rowNum > 0 && colNum > 0 && board._board[boardNum][rowNum - 1, colNum - 1].hasPiece() && !board._board[boardNum][rowNum - 1, colNum - 1].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum][rowNum - 1, colNum - 1].getName());
+             }
+             //Take foward and Left
+             if (white && rowNum < 4 && colNum > 0 && board._board[boardNum][rowNum + 1, colNum - 1].hasPiece() && !board._board[boardNum][rowNum + 1, colNum - 1].getPiece().white)
+             {
+                 moves.Add(board._board[boardNum][rowNum + 1, colNum - 1].getName());
              }
              return moves;
          }
+
 
 
     }

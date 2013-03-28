@@ -17,6 +17,10 @@ namespace RaumschachForm
         {
             return null;
         }
+        public bool Equals(Piece pc)
+        {
+            return this.white == pc.white && this.currentPos == pc.currentPos && this.myImage == pc.myImage;
+        }
 
 
     }

@@ -61,7 +61,7 @@ namespace RaumschachForm
                  _board = new List<Cell[,]>(){tempA,tempB,tempC,tempD,tempE};
             #endregion
 
-            _board[0][0, 0].addPiece("WhitePawn");
+            _board[0][0, 0].addPiece(new Pawn(true,"Aa1"));
             //_board[0][1, 0].addPiece("WhiteBishop");
         }
 
@@ -73,7 +73,6 @@ namespace RaumschachForm
             if (temp == null) return;
             cell1.addPiece(null);
             cell2.addPiece(temp);
-            Debug.WriteLine(cell1.getPiece());
         }
 
         public int getCellRow(string cellName)
@@ -129,6 +128,11 @@ namespace RaumschachForm
                     break;
             }
             return rowNumber;
+        }
+
+        public Cell getCell(string cellName)
+        {
+            return _board[getBoard(cellName)][getCellRow(cellName), getCellCol(cellName)];
         }
     }
 }
