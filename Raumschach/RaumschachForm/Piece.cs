@@ -1,25 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace RaumschachForm
 {
     public abstract class Piece
     {
-        public Image myImage;
-        public bool white;
-        public string currentPos;
-        public abstract List<String> getmoves(Board board);
-        public Image getImage()
+        public Image MyImage;
+        public bool White;
+        public string CurrentPos;
+        public abstract List<String> Getmoves(Board board);
+        public Image GetImage()
         {
             return null;
         }
         public bool Equals(Piece pc)
         {
-            return this.white == pc.white && this.currentPos == pc.currentPos && this.myImage == pc.myImage;
+            return White == pc.White && CurrentPos == pc.CurrentPos && MyImage == pc.MyImage;
         }
 
 

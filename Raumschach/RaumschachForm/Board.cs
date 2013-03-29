@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
-using System.Diagnostics;
 
 namespace RaumschachForm
 {
@@ -15,7 +10,7 @@ namespace RaumschachForm
         {
 
             #region Make Board
-            var tempA = new Cell[,] 
+            var tempA = new[,] 
             { 
                 { new Cell("Aa1"), new Cell("Aa2"), new Cell("Aa3"), new Cell("Aa4"), new Cell("Aa5") },
                 { new Cell("Ab1"), new Cell("Ab2"), new Cell("Ab3"), new Cell("Ab4"), new Cell("Ab5") },
@@ -24,7 +19,7 @@ namespace RaumschachForm
                 { new Cell("Ae1"), new Cell("Ae2"), new Cell("Ae3"), new Cell("Ae4"), new Cell("Ae5") }
             };
 
-				 var tempB = new Cell[,] 
+				 var tempB = new[,] 
             { 
 				{ new Cell("Ba1"), new Cell("Ba2"), new Cell("Ba3"), new Cell("Ba4"), new Cell("Ba5") },
                 { new Cell("Bb1"), new Cell("Bb2"), new Cell("Bb3"), new Cell("Bb4"), new Cell("Bb5") },
@@ -33,7 +28,7 @@ namespace RaumschachForm
                 { new Cell("Be1"), new Cell("Be2"), new Cell("Be3"), new Cell("Be4"), new Cell("Be5") }
             };
 				
-             var tempC = new Cell[,] 
+             var tempC = new[,] 
             { 
 				{ new Cell("Ca1"), new Cell("Ca2"), new Cell("Ca3"), new Cell("Ca4"), new Cell("Ca5") },
                 { new Cell("Cb1"), new Cell("Cb2"), new Cell("Cb3"), new Cell("Cb4"), new Cell("Cb5") },
@@ -41,7 +36,7 @@ namespace RaumschachForm
                 { new Cell("Cd1"), new Cell("Cd2"), new Cell("Cd3"), new Cell("Cd4"), new Cell("Cd5") },
                 { new Cell("Ce1"), new Cell("Ce2"), new Cell("Ce3"), new Cell("Ce4"), new Cell("Ce5") }
             };
-				 var tempD = new Cell[,] 
+				 var tempD = new[,] 
             { 
 				{ new Cell("Da1"), new Cell("Da2"), new Cell("Da3"), new Cell("Da4"), new Cell("Da5") },
                 { new Cell("Db1"), new Cell("Db2"), new Cell("Db3"), new Cell("Db4"), new Cell("Db5") },
@@ -49,7 +44,7 @@ namespace RaumschachForm
                 { new Cell("Dd1"), new Cell("Dd2"), new Cell("Dd3"), new Cell("Dd4"), new Cell("Dd5") },
                 { new Cell("De1"), new Cell("De2"), new Cell("De3"), new Cell("De4"), new Cell("De5") }
             };
-                 var tempE = new Cell[,] 
+                 var tempE = new[,] 
             { 
 				
 				{ new Cell("Ea1"), new Cell("Ea2"), new Cell("Ea3"), new Cell("Ea4"), new Cell("Ea5") },
@@ -58,24 +53,24 @@ namespace RaumschachForm
                 { new Cell("Ed1"), new Cell("Ed2"), new Cell("Ed3"), new Cell("Ed4"), new Cell("Ed5") },
                 { new Cell("Ee1"), new Cell("Ee2"), new Cell("Ee3"), new Cell("Ee4"), new Cell("Ee5") }
             };
-                 _board = new List<Cell[,]>(){tempA,tempB,tempC,tempD,tempE};
+                 _board = new List<Cell[,]> {tempA,tempB,tempC,tempD,tempE};
             #endregion
 
-            _board[0][0, 0].addPiece(new Pawn(true,"Aa1"));
+            _board[0][0, 0].AddPiece(new Pawn(true,"Aa1"));
             //_board[0][1, 0].addPiece("WhiteBishop");
         }
 
-        public void movePiece(string cellName1, string cellName2)
+        public void MovePiece(string cellName1, string cellName2)
         {
-            var cell1 = _board[getBoard(cellName1)][getCellRow(cellName1), getCellCol(cellName1)];
-            var cell2 = _board[getBoard(cellName2)][getCellRow(cellName2), getCellCol(cellName2)];
-            var temp = cell1.getPiece();
+            var cell1 = _board[GetBoardNumber(cellName1)][GetCellRow(cellName1), GetCellCol(cellName1)];
+            var cell2 = _board[GetBoardNumber(cellName2)][GetCellRow(cellName2), GetCellCol(cellName2)];
+            var temp = cell1.GetPiece();
             if (temp == null) return;
-            cell1.addPiece(null);
-            cell2.addPiece(temp);
+            cell1.AddPiece(null);
+            cell2.AddPiece(temp);
         }
 
-        public int getCellRow(string cellName)
+        public int GetCellRow(string cellName)
         {
             var row = cellName.Substring(1, 1);
             int rowNumber = 0;
@@ -100,12 +95,12 @@ namespace RaumschachForm
             return rowNumber;
         }
 
-        public int getCellCol(string cellName)
+        public int GetCellCol(string cellName)
         {
             var col = Convert.ToInt32(cellName.Substring(2, 1)) - 1;
             return col;
         }
-        public int getBoard(string cellName)
+        public int GetBoardNumber(string cellName)
         {
             var row = cellName.Substring(0, 1);
             int rowNumber = 0;
@@ -130,9 +125,9 @@ namespace RaumschachForm
             return rowNumber;
         }
 
-        public Cell getCell(string cellName)
+        public Cell GetCell(string cellName)
         {
-            return _board[getBoard(cellName)][getCellRow(cellName), getCellCol(cellName)];
+            return _board[GetBoardNumber(cellName)][GetCellRow(cellName), GetCellCol(cellName)];
         }
     }
 }

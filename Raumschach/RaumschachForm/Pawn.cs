@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
-using System.Windows.Forms;
 
 namespace RaumschachForm
 {
@@ -16,74 +11,74 @@ namespace RaumschachForm
    //(Environment.CurrentDirectory + @"\Images\PawnW.png");
 
         public Pawn(bool white, string currentPos){
-            base.white = white;
-            base.currentPos = currentPos;
+            White = white;
+            CurrentPos = currentPos;
     }
-         public override List<string> getmoves(Board board){
-             var boardNum = board.getBoard(base.currentPos);
-             var rowNum = board.getCellRow(base.currentPos);
-             var colNum = board.getCellCol(base.currentPos);
+         public override List<string> Getmoves(Board board){
+             var boardNum = board.GetBoardNumber(CurrentPos);
+             var rowNum = board.GetCellRow(CurrentPos);
+             var colNum = board.GetCellCol(CurrentPos);
              var moves = new List<String>();
 
              //Black Moves
-             if (!white && boardNum < 4 && !board._board[boardNum + 1][rowNum, colNum].hasPiece())
+             if (!White && boardNum < 4 && !board._board[boardNum + 1][rowNum, colNum].HasPiece())
              {
-                 moves.Add(board._board[boardNum + 1][rowNum, colNum].getName());
+                 moves.Add(board._board[boardNum + 1][rowNum, colNum].GetName());
              }
-             if (!white && colNum < 4 && !board._board[boardNum][rowNum, colNum + 1].hasPiece())
+             if (!White && colNum < 4 && !board._board[boardNum][rowNum, colNum + 1].HasPiece())
              {
-                 moves.Add(board._board[boardNum][rowNum, colNum + 1].getName());
+                 moves.Add(board._board[boardNum][rowNum, colNum + 1].GetName());
              }
              //Take Down and right
-             if (!white && boardNum < 4 && rowNum < 4 && board._board[boardNum + 1][rowNum + 1, colNum].hasPiece() && board._board[boardNum + 1][rowNum + 1, colNum].getPiece().white)
+             if (!White && boardNum < 4 && rowNum < 4 && board._board[boardNum + 1][rowNum + 1, colNum].HasPiece() && board._board[boardNum + 1][rowNum + 1, colNum].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum + 1][rowNum + 1, colNum].getName());
+                 moves.Add(board._board[boardNum + 1][rowNum + 1, colNum].GetName());
              }
              //Take Up and left
-             if (!white && boardNum < 4 && rowNum > 0 && board._board[boardNum + 1][rowNum - 1, colNum].hasPiece() && board._board[boardNum + 1][rowNum - 1, colNum].getPiece().white)
+             if (!White && boardNum < 4 && rowNum > 0 && board._board[boardNum + 1][rowNum - 1, colNum].HasPiece() && board._board[boardNum + 1][rowNum - 1, colNum].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum + 1][rowNum - 1, colNum].getName());
+                 moves.Add(board._board[boardNum + 1][rowNum - 1, colNum].GetName());
              }
              //Take foward and Right
-             if (!white && rowNum < 4 && colNum < 4 && board._board[boardNum][rowNum + 1, colNum + 1].hasPiece() && board._board[boardNum][rowNum + 1, colNum + 1].getPiece().white)
+             if (!White && rowNum < 4 && colNum < 4 && board._board[boardNum][rowNum + 1, colNum + 1].HasPiece() && board._board[boardNum][rowNum + 1, colNum + 1].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum][rowNum + 1, colNum + 1].getName());
+                 moves.Add(board._board[boardNum][rowNum + 1, colNum + 1].GetName());
              }
              //Take foward and Left
-             if (!white && rowNum > 0 && colNum < 4 && board._board[boardNum][rowNum - 1, colNum + 1].hasPiece() && board._board[boardNum][rowNum - 1, colNum + 1].getPiece().white)
+             if (!White && rowNum > 0 && colNum < 4 && board._board[boardNum][rowNum - 1, colNum + 1].HasPiece() && board._board[boardNum][rowNum - 1, colNum + 1].GetPiece().White)
              {
                  moves.Add(board._board[boardNum][rowNum - 1, colNum + 1]
-                     .getName());
+                     .GetName());
              }
 
              //White Moves
-             if (white && boardNum > 0 && !board._board[boardNum - 1][rowNum, colNum].hasPiece())
+             if (White && boardNum > 0 && !board._board[boardNum - 1][rowNum, colNum].HasPiece())
              {
-                 moves.Add(board._board[boardNum - 1][rowNum, colNum].getName());
+                 moves.Add(board._board[boardNum - 1][rowNum, colNum].GetName());
              }
-             if (white && colNum > 0 && !board._board[boardNum][rowNum, colNum - 1].hasPiece())
+             if (White && colNum > 0 && !board._board[boardNum][rowNum, colNum - 1].HasPiece())
              {
-                 moves.Add(board._board[boardNum][rowNum, colNum - 1].getName());
+                 moves.Add(board._board[boardNum][rowNum, colNum - 1].GetName());
              }
              //Take Up and right
-             if (white && boardNum > 0 && rowNum > 0 && board._board[boardNum - 1][rowNum - 1, colNum].hasPiece() && !board._board[boardNum - 1][rowNum - 1, colNum].getPiece().white)
+             if (White && boardNum > 0 && rowNum > 0 && board._board[boardNum - 1][rowNum - 1, colNum].HasPiece() && !board._board[boardNum - 1][rowNum - 1, colNum].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum - 1][rowNum - 1, colNum].getName());
+                 moves.Add(board._board[boardNum - 1][rowNum - 1, colNum].GetName());
              }
              //Take Up and left
-             if (white && boardNum > 0 && rowNum < 4 && board._board[boardNum - 1][rowNum + 1, colNum].hasPiece() && !board._board[boardNum - 1][rowNum + 1, colNum].getPiece().white)
+             if (White && boardNum > 0 && rowNum < 4 && board._board[boardNum - 1][rowNum + 1, colNum].HasPiece() && !board._board[boardNum - 1][rowNum + 1, colNum].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum - 1][rowNum + 1, colNum].getName());
+                 moves.Add(board._board[boardNum - 1][rowNum + 1, colNum].GetName());
              }
              //Take foward and Right
-             if (white && rowNum > 0 && colNum > 0 && board._board[boardNum][rowNum - 1, colNum - 1].hasPiece() && !board._board[boardNum][rowNum - 1, colNum - 1].getPiece().white)
+             if (White && rowNum > 0 && colNum > 0 && board._board[boardNum][rowNum - 1, colNum - 1].HasPiece() && !board._board[boardNum][rowNum - 1, colNum - 1].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum][rowNum - 1, colNum - 1].getName());
+                 moves.Add(board._board[boardNum][rowNum - 1, colNum - 1].GetName());
              }
              //Take foward and Left
-             if (white && rowNum < 4 && colNum > 0 && board._board[boardNum][rowNum + 1, colNum - 1].hasPiece() && !board._board[boardNum][rowNum + 1, colNum - 1].getPiece().white)
+             if (White && rowNum < 4 && colNum > 0 && board._board[boardNum][rowNum + 1, colNum - 1].HasPiece() && !board._board[boardNum][rowNum + 1, colNum - 1].GetPiece().White)
              {
-                 moves.Add(board._board[boardNum][rowNum + 1, colNum - 1].getName());
+                 moves.Add(board._board[boardNum][rowNum + 1, colNum - 1].GetName());
              }
              return moves;
          }
