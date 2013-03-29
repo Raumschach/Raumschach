@@ -81,6 +81,7 @@ namespace RaumschachForm
                  moves.Add(board._board[boardNum][rowNum + 1, colNum - 1].GetName());
              }
              return moves;
+
          }
 
 
