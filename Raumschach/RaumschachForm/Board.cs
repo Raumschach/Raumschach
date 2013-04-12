@@ -55,9 +55,29 @@ namespace RaumschachForm
             };
                  _board = new List<Cell[,]> {tempA,tempB,tempC,tempD,tempE};
             #endregion
+            _board[0][0, 1].AddPiece(new Pawn(false, "Aa2"));
+            _board[0][1, 1].AddPiece(new Pawn(false, "Ab2"));
+            _board[0][2, 1].AddPiece(new Pawn(false, "Ac2"));
+            _board[0][3, 1].AddPiece(new Pawn(false, "Ad2"));
+            _board[0][4, 1].AddPiece(new Pawn(false, "Ae2"));
+            _board[1][0, 1].AddPiece(new Pawn(false, "Ba2"));
+            _board[1][1, 1].AddPiece(new Pawn(false, "Bb2"));
+            _board[1][2, 1].AddPiece(new Pawn(false, "Bc2"));
+            _board[1][3, 1].AddPiece(new Pawn(false, "Bd2"));
+            _board[1][4, 1].AddPiece(new Pawn(false, "Be2"));
 
-            _board[0][0, 0].AddPiece(new Pawn(true,"Aa1"));
-            //_board[0][1, 0].addPiece("WhiteBishop");
+
+            _board[4][0, 3].AddPiece(new Pawn(true, "Ea4"));
+            _board[4][1, 3].AddPiece(new Pawn(true, "Eb4"));
+            _board[4][2, 3].AddPiece(new Pawn(true, "Ec4"));
+            _board[4][3, 3].AddPiece(new Pawn(true, "Ed4"));
+            _board[4][4, 3].AddPiece(new Pawn(true, "Ee4"));
+            _board[3][0, 3].AddPiece(new Pawn(true, "Da4"));
+            _board[3][1, 3].AddPiece(new Pawn(true, "Db4"));
+            _board[3][2, 3].AddPiece(new Pawn(true, "Dc4"));
+            _board[3][3, 3].AddPiece(new Pawn(true, "Dd4"));
+            _board[3][4, 3].AddPiece(new Pawn(true, "De4"));
+
         }
 
         public void MovePiece(string cellName1, string cellName2)
