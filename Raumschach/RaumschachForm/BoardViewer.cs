@@ -14,7 +14,7 @@ namespace RaumschachForm
     {
         private bool moveNextClick = false;
         private Panel panelToClear;
-        private Board _board;
+        public Board _board;
         List<string> currentMoves = new List<string>();
 
 
@@ -52,7 +52,7 @@ namespace RaumschachForm
 
 
 
-            if (currentPanel == panelToClear)
+            if (panelToClear != null && currentPanel.Name == panelToClear.Name)
             {
                 currentMoves.Add(currentCell.GetName());
                 fixColors(currentMoves);
@@ -89,7 +89,7 @@ namespace RaumschachForm
 
         }
 
-        private void fixColors(List<string> moves )
+        public void fixColors(List<string> moves )
         {
             foreach (var move in moves)
             {
@@ -111,7 +111,7 @@ namespace RaumschachForm
         }
 
         public void sendClick(string cellName)
-        {
+        { 
             var panel = new Panel();
             panel.Name = cellName;
             Invoke(new EventHandler(SelectedSquare), panel);

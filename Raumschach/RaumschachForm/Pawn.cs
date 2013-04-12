@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define MYTEST
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 
@@ -6,14 +7,21 @@ namespace RaumschachForm
 {
     public class Pawn : Piece
     {
+#if (DEBUG && !MYTEST)
         public readonly Image BlackPawn = Image.FromFile
             (Environment.CurrentDirectory + @"\Images\PawnB.png");
 
-        public readonly Image WhitePawn = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\PawnW.png");
-
+        public readonly Image WhitePawn = Image.FromFile(Environment.CurrentDirectory + @"\Images\PawnW.png");
+#endif
+#if (DEBUG && MYTEST)
+                public readonly Image BlackPawn = Image.FromFile
+            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
+        public readonly Image WhitePawn = Image.FromFile(@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
+#endif
         public Pawn(bool white, string currentPos)
         {
+
+
             //var filePath = Environment.CurrentDirectory;
             //var strArray = new string[] {"\\Raumschach\\Raumschach"};
             //filePath = filePath.Split(strArray,StringSplitOptions.None)[0];
