@@ -10,10 +10,8 @@ namespace RaumschachForm
         public bool White;
         public string CurrentPos;
         public abstract List<String> Getmoves(Board board);
-        public Image GetImage()
-        {
-            return null;
-        }
+        public abstract Image GetImage();
+
         public bool Equals(Piece pc)
         {
             return White == pc.White && CurrentPos == pc.CurrentPos && MyImage == pc.MyImage;

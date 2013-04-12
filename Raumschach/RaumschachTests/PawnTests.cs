@@ -108,6 +108,14 @@ namespace RaumschachTests
             var tempList = new List<String> {"Cd2", "Bd3", "Bc3"};
             Assert.AreEqual(tempList, target.Getmoves(board));
         }
+        [Test]
+        public void TestGetImage()
+        {
+            var target = new Pawn(false, "Bd2");
+            Assert.AreEqual(target.BlackPawn, target.GetImage());
+            var targetWhite = new Pawn(true, "Bd2");
+            Assert.AreEqual(target.WhitePawn, targetWhite.GetImage());
+        }
         
     }
 }

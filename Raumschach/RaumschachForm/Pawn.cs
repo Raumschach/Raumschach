@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace RaumschachForm
 {
      public class Pawn:Piece
     {
-   //     private Image blackPawn = Image.FromFile
-   //(Environment.CurrentDirectory + @"\Images\PawnB.png");
-   //     private Image whitePawn = Image.FromFile
-   //(Environment.CurrentDirectory + @"\Images\PawnW.png");
+        public readonly Image BlackPawn = Image.FromFile
+   (Environment.CurrentDirectory + @"\Images\PawnB.png");
+        public readonly Image WhitePawn = Image.FromFile
+   (Environment.CurrentDirectory + @"\Images\PawnW.png");
 
         public Pawn(bool white, string currentPos){
             White = white;
@@ -84,7 +85,9 @@ namespace RaumschachForm
 
          }
 
-
-
+         public override Image GetImage()
+         {
+             return White ? WhitePawn : BlackPawn;
+         }
     }
 }
