@@ -8,7 +8,6 @@ namespace RaumschachForm
         public List<Cell[,]> _board;
         public Board()
         {
-
             #region Make Board
             var tempA = new[,] 
             { 
@@ -55,6 +54,10 @@ namespace RaumschachForm
             };
                  _board = new List<Cell[,]> {tempA,tempB,tempC,tempD,tempE};
             #endregion
+        }
+
+        public void NewGame()
+        {
             _board[0][0, 1].AddPiece(new Pawn(false, "Aa2"));
             _board[0][1, 1].AddPiece(new Pawn(false, "Ab2"));
             _board[0][2, 1].AddPiece(new Pawn(false, "Ac2"));
@@ -77,7 +80,6 @@ namespace RaumschachForm
             _board[3][2, 3].AddPiece(new Pawn(true, "Dc4"));
             _board[3][3, 3].AddPiece(new Pawn(true, "Dd4"));
             _board[3][4, 3].AddPiece(new Pawn(true, "De4"));
-
         }
 
         public void MovePiece(string cellName1, string cellName2)
