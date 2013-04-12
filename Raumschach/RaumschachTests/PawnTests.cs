@@ -112,9 +112,11 @@ namespace RaumschachTests
         public void TestGetImage()
         {
             var target = new Pawn(false, "Bd2");
-            Assert.AreEqual(target.BlackPawn, target.GetImage());
+            var im1 = target.GetImage();
+            Assert.AreEqual(target.BlackPawn, im1);
             var targetWhite = new Pawn(true, "Bd2");
-            Assert.AreEqual(target.WhitePawn, targetWhite.GetImage());
+            var im2 = targetWhite.GetImage();
+            Assert.AreEqual(targetWhite.WhitePawn, im2);
         }
         
     }
