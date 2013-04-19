@@ -9,7 +9,7 @@ namespace RaumschachForm
         public Image MyImage;
         public bool White;
         public string CurrentPos;
-        public abstract List<String> Getmoves(Board board);
+        public abstract List<String> GetMoves(Board board);
         public abstract Image GetImage();
 
         public bool Equals(Piece pc)

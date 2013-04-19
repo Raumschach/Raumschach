@@ -7,7 +7,7 @@ using Assert = NUnit.Framework.Assert;
 
 namespace RaumschachTests
 {
-    [TestClass]
+    [TestFixture]
     public class PawnTests
     {
         [Test]
@@ -24,7 +24,7 @@ namespace RaumschachTests
            var target = new Pawn(true, "Ee4");
            var board = new Board();
             var tempList = new List<String> {"De4", "Ee3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
            
 
         }
@@ -35,7 +35,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Cb4").AddPiece(new Pawn(false, "Cb4"));
             var tempList = new List<String> {"Cc4", "Dc3", "Cb4"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestwhitePawnTakeUpLeft()
@@ -44,7 +44,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Cd4").AddPiece(new Pawn(false, "Cd4"));
             var tempList = new List<String> {"Cc4", "Dc3", "Cd4"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestwhitePawnTakeForwardRight()
@@ -53,7 +53,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Db3").AddPiece(new Pawn(false, "Db3"));
             var tempList = new List<String> {"Cc4", "Dc3", "Db3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestwhitePawnTakeForwardLeft()
@@ -62,7 +62,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Dd3").AddPiece(new Pawn(false, "Dd3"));
             var tempList = new List<String> {"Cc4", "Dc3", "Dd3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestBlackPawnGetMoves()
@@ -70,7 +70,7 @@ namespace RaumschachTests
             var target = new Pawn(false, "Bd2");
             var board = new Board();
             var tempList = new List<String> {"Cd2", "Bd3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestBlackPawnTakeDownRight()
@@ -79,7 +79,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Ce2").AddPiece(new Pawn(true, "Ce2"));
             var tempList = new List<String> {"Cd2", "Bd3", "Ce2"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TesBlackPawnTakeDownLeft()
@@ -88,7 +88,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Cc2").AddPiece(new Pawn(true, "Cc2"));
             var tempList = new List<String> {"Cd2", "Bd3", "Cc2"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestBlackPawnTakeForwardRight()
@@ -97,7 +97,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Be3").AddPiece(new Pawn(true, "Be3"));
             var tempList = new List<String> {"Cd2", "Bd3", "Be3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestBlackPawnTakeForwardLeft()
@@ -106,7 +106,7 @@ namespace RaumschachTests
             var board = new Board();
             board.GetCell("Bc3").AddPiece(new Pawn(true, "Bc3"));
             var tempList = new List<String> {"Cd2", "Bd3", "Bc3"};
-            Assert.AreEqual(tempList, target.Getmoves(board));
+            Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
         public void TestGetImage()

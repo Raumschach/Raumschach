@@ -55,7 +55,16 @@ namespace RaumschachTests
             target.MovePiece("Aa1", "Ab1");
             Assert.IsNull(target._board[0][0, 0].GetPiece());
             Assert.IsTrue(new Pawn(true, "Ab1").Equals(target._board[0][1, 0].GetPiece()));
-
+        }
+        [Test]
+        public void TestGetNeighborCell()
+        {
+            Assert.AreEqual(new Cell("Cc2"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Backward));
+            Assert.AreEqual(new Cell("Cc4"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Forward));
+            Assert.AreEqual(new Cell("Bc3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Up));
+            Assert.AreEqual(new Cell("Dc3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Down));
+            Assert.AreEqual(new Cell("Cb3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Left));
+            Assert.AreEqual(new Cell("Cd3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Right));
         }
         
     }

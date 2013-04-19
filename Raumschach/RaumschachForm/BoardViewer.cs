@@ -76,7 +76,7 @@ namespace RaumschachForm
             {
                 currentPanel.BackColor = Color.Red;
 
-                currentMoves = currentCell.GetPiece().Getmoves(_board);
+                currentMoves = currentCell.GetPiece().GetMoves(_board);
 
                 foreach (
                     var tempPanel in currentMoves.Select(move => (Panel) Controls.Find(move, true).FirstOrDefault()))

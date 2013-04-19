@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using RaumschachForm;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace RaumschachTests
 {
-    [TestClass]
+    [TestFixture]
     public class BoardViewerTests
     {
-        [TestMethod]
+        [Test]
         public void TestSendClick()
         {
             var view = new BoardViewer();
@@ -16,7 +18,7 @@ namespace RaumschachTests
             view.sendClick("Aa1");
             view.Dispose();
         }
-        [TestMethod]
+        [Test]
         public void TestFixColorsNull()
         {
             var view = new BoardViewer();
@@ -24,7 +26,7 @@ namespace RaumschachTests
             list.Add("Fb1");
             view.fixColors(list);
         }
-        [TestMethod]
+        [Test]
         public void TestMovePiece()
         {
             var view = new BoardViewer();
@@ -36,7 +38,7 @@ namespace RaumschachTests
             Assert.IsNull(view._board.GetCell("Ab2").GetPiece());
             view.Dispose();
         }
-        [TestMethod]
+        [Test]
         public void TestNotMovePiece()
         {
             var view = new BoardViewer();
@@ -48,7 +50,7 @@ namespace RaumschachTests
             Assert.IsNotNull(view._board.GetCell("Ab2").GetPiece());
             view.Dispose();
         }
-        [TestMethod]
+        [Test]
         public void TestBadtMovePiece()
         {
             var view = new BoardViewer();

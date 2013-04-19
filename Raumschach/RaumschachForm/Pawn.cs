@@ -23,19 +23,11 @@ namespace RaumschachForm
 #endif
         public Pawn(bool white, string currentPos)
         {
-
-
-            //var filePath = Environment.CurrentDirectory;
-            //var strArray = new string[] {"\\Raumschach\\Raumschach"};
-            //filePath = filePath.Split(strArray,StringSplitOptions.None)[0];
-            //BlackPawn = Image.FromFile(filePath + "\\Raumschach\\Raumschach\\RaumschachForm\\bin\\Debug\\Images\\PawnB.png");
-            //WhitePawn = Image.FromFile(filePath + "\\Raumschach\\Raumschach\\RaumschachForm\\bin\\Debug\\Images\\PawnW.png");
-
             White = white;
             CurrentPos = currentPos;
         }
 
-        public override List<string> Getmoves(Board board)
+        public override List<string> GetMoves(Board board)
         {
             var boardNum = board.GetBoardNumber(CurrentPos);
             var rowNum = board.GetCellRow(CurrentPos);

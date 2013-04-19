@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace RaumschachForm
 {
-
-    class Rook : Piece
+    public class Rook : Piece
     {
 #if (DEBUG && !MYTEST)
         public readonly Image BlackRook = Image.FromFile
@@ -24,9 +23,31 @@ namespace RaumschachForm
         //(@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookW.png");
         (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookW.png");
 #endif
-        public override List<string> Getmoves(Board board)
+
+        public Rook(bool white, string currentPos)
         {
-            return null;
+            White = white;
+            CurrentPos = currentPos;
+        }
+
+        public override List<string> GetMoves(Board board)
+        {
+            var moves = new List<string>();
+
+            foreach (var direction in Enum.GetValues(typeof(Board.CellNeighbor)))
+            {
+                var blah = (Board.CellNeighbor) direction;
+                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), blah);
+
+                while (currentCell != null && (currentCell.GetPiece() == null || currentCell.GetPiece().White != White))
+                {
+                    moves.Add(currentCell.GetName());
+                    if (currentCell.HasPiece()) break;
+                    currentCell = board.GetNeighborCell(currentCell, (Board.CellNeighbor)direction);
+                }
+            }
+
+            return moves;
         }
 
         public override Image GetImage()

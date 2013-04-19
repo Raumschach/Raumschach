@@ -68,6 +68,8 @@ namespace RaumschachForm
             _board[1][2, 1].AddPiece(new Pawn(false, "Bc2"));
             _board[1][3, 1].AddPiece(new Pawn(false, "Bd2"));
             _board[1][4, 1].AddPiece(new Pawn(false, "Be2"));
+            _board[0][4, 0].AddPiece(new Rook(false, "Ae1"));
+            _board[0][0, 0].AddPiece(new Rook(false, "Aa1"));
 
 
             _board[4][0, 3].AddPiece(new Pawn(true, "Ea4"));
@@ -80,6 +82,8 @@ namespace RaumschachForm
             _board[3][2, 3].AddPiece(new Pawn(true, "Dc4"));
             _board[3][3, 3].AddPiece(new Pawn(true, "Dd4"));
             _board[3][4, 3].AddPiece(new Pawn(true, "De4"));
+            _board[4][0, 4].AddPiece(new Rook(true, "Ea5"));
+            _board[4][4, 4].AddPiece(new Rook(true, "Ee5"));
         }
 
         public void MovePiece(string cellName1, string cellName2)
@@ -90,6 +94,53 @@ namespace RaumschachForm
             if (temp == null) return;
             cell1.AddPiece(null);
             cell2.AddPiece(temp);
+        }
+
+        public Cell GetNeighborCell(Cell currentCell, CellNeighbor neighbor)
+        {
+            Cell nCell = null;
+            try
+            {
+                switch (neighbor)
+                {
+                    case CellNeighbor.Backward:
+                        nCell = _board[GetBoardNumber(currentCell.GetName())][GetCellRow(currentCell.GetName()), GetCellCol(currentCell.GetName()) - 1];
+                        break;
+                    case CellNeighbor.Forward:
+                        nCell = _board[GetBoardNumber(currentCell.GetName())][GetCellRow(currentCell.GetName()), GetCellCol(currentCell.GetName()) + 1];
+                        break;
+                    case CellNeighbor.Up:
+                        nCell = _board[GetBoardNumber(currentCell.GetName()) - 1][GetCellRow(currentCell.GetName()), GetCellCol(currentCell.GetName())];
+                        break;
+                    case CellNeighbor.Down:
+                        nCell = _board[GetBoardNumber(currentCell.GetName()) + 1][GetCellRow(currentCell.GetName()), GetCellCol(currentCell.GetName())];
+                        break;
+                    case CellNeighbor.Left:
+                        nCell = _board[GetBoardNumber(currentCell.GetName())][GetCellRow(currentCell.GetName()) - 1, GetCellCol(currentCell.GetName())];
+                        break;
+                    case CellNeighbor.Right:
+                        nCell = _board[GetBoardNumber(currentCell.GetName())][GetCellRow(currentCell.GetName()) + 1, GetCellCol(currentCell.GetName())];
+                        break;
+                }
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+
+            return nCell;
+        }
+
+        public enum CellNeighbor
+        {
+            Forward,
+            Backward,
+            Left,
+            Right,
+            Up,
+            Down
         }
 
         public int GetCellRow(string cellName)

@@ -30,5 +30,9 @@
         {
             return _piece != null;
         }
+        public override bool Equals(object obj)
+        {
+            return obj is Cell && this._name == ((Cell) obj)._name;
+        }
     }
 }
