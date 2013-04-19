@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PawnTests.cs" />
     <Compile Include="BoardViewerTests.cs" />
+    <Compile Include="BishopTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RaumschachForm\RaumschachForm.csproj">
