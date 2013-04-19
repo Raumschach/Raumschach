@@ -16,6 +16,7 @@ namespace RaumschachForm
         private Panel panelToClear;
         public Board _board;
         List<string> currentMoves = new List<string>();
+        private bool moveWhite;
 
 
         public BoardViewer()
@@ -23,6 +24,7 @@ namespace RaumschachForm
             InitializeComponent();
             _board = new Board();
             _board.NewGame();
+            moveWhite = true;
             UpdateBoard();
 
         }
@@ -50,6 +52,11 @@ namespace RaumschachForm
             var currentPanel = (Panel)sender;
             var currentCell = _board.GetCell(currentPanel.Name);
 
+            if (currentCell.GetPiece() != null && moveWhite != currentCell.GetPiece().White)
+            {
+                return;
+            }
+
 
 
             if (panelToClear != null && currentPanel.Name == panelToClear.Name)
@@ -70,6 +77,7 @@ namespace RaumschachForm
                 currentMoves.Add(clearCell.GetName());
                 fixColors(currentMoves);
                 _board.MovePiece(clearCell.GetName(),currentCell.GetName());
+                moveWhite = !moveWhite;
                 currentMoves = new List<string>();
             }
             else if (currentCell.HasPiece())
