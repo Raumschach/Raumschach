@@ -74,6 +74,9 @@ namespace RaumschachForm
             _board[0][1, 0].AddPiece(new Knight(false, "Ad1"));
             _board[1][3, 0].AddPiece(new Bishop(false, "Bd1"));
             _board[1][0, 0].AddPiece(new Bishop(false, "Ba1"));
+            _board[1][4, 0].AddPiece(new Unicorn(false, "Be1"));
+            _board[1][1, 0].AddPiece(new Unicorn(false, "Bb1"));
+            _board[1][2, 0].AddPiece(new Queen(false, "Bc1"));
 
 
             _board[4][0, 3].AddPiece(new Pawn(true, "Ea4"));
@@ -92,6 +95,9 @@ namespace RaumschachForm
             _board[4][3, 4].AddPiece(new Knight(true, "Ed5"));
             _board[3][3, 4].AddPiece(new Bishop(true, "Dd5"));
             _board[3][0, 4].AddPiece(new Bishop(true, "Da5"));
+            _board[3][1, 4].AddPiece(new Unicorn(true, "Db5"));
+            _board[3][4, 4].AddPiece(new Unicorn(true, "De5"));
+            _board[3][2, 4].AddPiece(new Queen(true, "Dc5"));
         }
 
         public void MovePiece(string cellName1, string cellName2)

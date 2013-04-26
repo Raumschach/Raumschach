@@ -57,5 +57,12 @@ namespace RaumschachTests
             _board.GetCell(target2.CurrentPos).AddPiece(target2);
             Assert.AreEqual(movesList, target.GetMoves(_board));
         }
+        [Test]
+        public void TestKnightWithSomeMoves()
+        {
+            var target = new Knight(true, "Ab1");
+            var movesList = new List<String> { "Aa3", "Ac3", "Bb3", "Ad2", "Bd1","Cb2", "Ca1","Cc1" };
+            Assert.AreEqual(movesList, target.GetMoves(_board));
+        }
     }
 }

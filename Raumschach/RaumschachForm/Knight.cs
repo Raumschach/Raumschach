@@ -20,11 +20,11 @@ namespace RaumschachForm
         #endif
         #if (DEBUG && MYTEST)
                     public readonly Image BlackPawn = Image.FromFile
-                //  (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
-            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
+                 (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
+            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
             public readonly Image WhitePawn = Image.FromFile
-            //(@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
-            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
+            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
+            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
         #endif
 
         public Knight(bool white, string currentPos)
