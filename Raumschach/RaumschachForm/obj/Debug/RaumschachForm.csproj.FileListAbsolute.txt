@@ -15,3 +15,4 @@ C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csprojResolveAssemblyReference.cache
