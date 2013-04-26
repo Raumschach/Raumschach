@@ -43,11 +43,11 @@ namespace RaumschachTests
         {
             var view = new BoardViewer();
             view.Show();
-            view.sendClick("Ab2");
-            view.sendClick("Ab2");
-            var cell = view._board.GetCell("Ab3");
+            view.sendClick("Eb4");
+            view.sendClick("Eb4");
+            var cell = view._board.GetCell("Eb3");
             Assert.IsNull(cell.GetPiece());
-            Assert.IsNotNull(view._board.GetCell("Ab2").GetPiece());
+            Assert.IsNotNull(view._board.GetCell("Eb4").GetPiece());
             view.Dispose();
         }
         [Test]
@@ -55,11 +55,11 @@ namespace RaumschachTests
         {
             var view = new BoardViewer();
             view.Show();
-            view.sendClick("Ab2");
+            view.sendClick("Eb4");
             view.sendClick("Eb2");
             var cell = view._board.GetCell("Eb2");
             Assert.IsNull(cell.GetPiece());
-            Assert.IsNotNull(view._board.GetCell("Ab2").GetPiece());
+            Assert.IsNotNull(view._board.GetCell("Eb4").GetPiece());
             view.Dispose();
         }
     }
