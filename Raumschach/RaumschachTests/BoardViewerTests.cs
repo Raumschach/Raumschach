@@ -31,11 +31,11 @@ namespace RaumschachTests
         {
             var view = new BoardViewer();
             view.Show();
-            view.sendClick("Ab2");
-            view.sendClick("Ab3");
-            var cell = view._board.GetCell("Ab3");
+            view.sendClick("Eb4");
+            view.sendClick("Eb3");
+            var cell = view._board.GetCell("Eb3");
             Assert.IsNotNull(cell.GetPiece());
-            Assert.IsNull(view._board.GetCell("Ab2").GetPiece());
+            Assert.IsNull(view._board.GetCell("Eb4").GetPiece());
             view.Dispose();
         }
         [Test]
