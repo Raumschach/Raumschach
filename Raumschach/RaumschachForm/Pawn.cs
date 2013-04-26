@@ -15,11 +15,11 @@ namespace RaumschachForm
 #endif
 #if (DEBUG && MYTEST)
         public readonly Image BlackPawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
-       // (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
+          //  (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
+        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
         public readonly Image WhitePawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
-       // (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
+           // (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
+        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
 #endif
         public Pawn(bool white, string currentPos)
         {

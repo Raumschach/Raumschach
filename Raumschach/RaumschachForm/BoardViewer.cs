@@ -52,7 +52,7 @@ namespace RaumschachForm
             var currentPanel = (Panel)sender;
             var currentCell = _board.GetCell(currentPanel.Name);
 
-            if (currentCell.GetPiece() != null && moveWhite != currentCell.GetPiece().White)
+            if (currentCell.GetPiece() != null && (moveWhite != currentCell.GetPiece().White && !moveNextClick))
             {
                 return;
             }

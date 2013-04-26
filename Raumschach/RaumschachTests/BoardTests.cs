@@ -66,6 +66,17 @@ namespace RaumschachTests
             Assert.AreEqual(new Cell("Cb3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Left));
             Assert.AreEqual(new Cell("Cd3"), target.GetNeighborCell(new Cell("Cc3"), Board.CellNeighbor.Right));
         }
+        [Test]
+        public void TestIsSameOrOpposite()
+        {
+            Assert.IsFalse(target.IsSameOrOpposite(Board.CellNeighbor.Down, Board.CellNeighbor.Forward));
+            Assert.IsFalse(target.IsSameOrOpposite(Board.CellNeighbor.Backward, Board.CellNeighbor.Down));
+            Assert.IsTrue(target.IsSameOrOpposite(Board.CellNeighbor.Forward, Board.CellNeighbor.Forward));
+            Assert.IsTrue(target.IsSameOrOpposite(Board.CellNeighbor.Forward, Board.CellNeighbor.Backward));
+            Assert.IsTrue(target.IsSameOrOpposite(Board.CellNeighbor.Up, Board.CellNeighbor.Down));
+            Assert.IsTrue(target.IsSameOrOpposite(Board.CellNeighbor.Left, Board.CellNeighbor.Right));
+            Assert.IsTrue(target.IsSameOrOpposite(Board.CellNeighbor.Right, Board.CellNeighbor.Left));
+        }
         
     }
 }

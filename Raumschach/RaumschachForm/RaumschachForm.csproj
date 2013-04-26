@@ -53,6 +53,7 @@
       <DependentUpon>BoardViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Cell.cs" />
+    <Compile Include="Knight.cs" />
     <Compile Include="Pawn.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Program.cs" />
