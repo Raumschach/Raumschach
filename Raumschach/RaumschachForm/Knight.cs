@@ -12,23 +12,36 @@ namespace RaumschachForm
     public class Knight: Piece
     {
 
-#if (DEBUG && !MYTEST)
-        public readonly Image BlackKnight = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\KnightB.png"); //Bruce Wayne
+        #if (DEBUG && !MYTEST)
+                public readonly Image BlackKnight = Image.FromFile
+                    (Environment.CurrentDirectory + @"\Images\KnightB.png"); //Bruce Wayne
 
-        public readonly Image WhiteKnight = Image.FromFile(Environment.CurrentDirectory + @"\Images\KnightW.png"); //THarvey Two Face
-        #endif
-        #if (DEBUG && MYTEST)
-                    public readonly Image BlackPawn = Image.FromFile
-                 (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
-            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
-            public readonly Image WhitePawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
-            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
+                public readonly Image WhiteKnight = Image.FromFile(Environment.CurrentDirectory + @"\Images\KnightW.png"); //THarvey Two Face
+                #endif
+                #if (DEBUG && MYTEST)
+                            public readonly Image BlackKnight;
+                    public readonly Image WhiteKnight;
         #endif
 
         public Knight(bool white, string currentPos)
         {
+            #if (DEBUG && MYTEST)
+                        var folder = Environment.SpecialFolder.MyDocuments;
+                        if (folder.ToString().Contains("iversoda"))
+                        {
+                            BlackKnight = Image.FromFile
+                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
+                            WhiteKnight = Image.FromFile
+                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
+                        }
+                        if (folder.ToString().Contains("sternetj"))
+                        {
+                            BlackKnight = Image.FromFile
+                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
+                            WhiteKnight = Image.FromFile
+                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
+                        }
+            #endif
             White = white;
             CurrentPos = currentPos;
         }

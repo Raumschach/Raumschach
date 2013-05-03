@@ -1,12 +1,3 @@
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe.config
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.pdb
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csprojResolveAssemblyReference.cache
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.BoardViewer.resources
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe.config
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.pdb
@@ -16,3 +7,11 @@ C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csprojResolveAssemblyReference.cache
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe.config
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.BoardViewer.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb

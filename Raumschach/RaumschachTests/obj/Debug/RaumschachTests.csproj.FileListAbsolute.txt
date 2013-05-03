@@ -1,12 +1,3 @@
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.dll
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.pdb
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachForm.exe
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachForm.pdb
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.csprojResolveAssemblyReference.cache
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.dll
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.pdb
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.dll
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.xml
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.dll
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.pdb
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.dll
@@ -16,3 +7,12 @@ C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\bi
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.csprojResolveAssemblyReference.cache
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.dll
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachTests.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachForm.exe
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\RaumschachForm.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Debug\nunit.framework.xml
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.csprojResolveAssemblyReference.cache
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Debug\RaumschachTests.pdb

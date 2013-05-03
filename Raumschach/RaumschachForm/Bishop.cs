@@ -25,23 +25,37 @@ namespace RaumschachForm
                 { Board.CellNeighbor.Backward, Board.CellNeighbor.Up},
                 { Board.CellNeighbor.Backward, Board.CellNeighbor.Down}
             };
-#if (DEBUG && !MYTEST)
-        public readonly Image BlackBishop = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\BishopB.png");
+        #if (DEBUG && !MYTEST)
+                public readonly Image BlackBishop = Image.FromFile
+                    (Environment.CurrentDirectory + @"\Images\BishopB.png");
 
-        public readonly Image WhiteBishop = Image.FromFile(Environment.CurrentDirectory + @"\Images\BishopW.png");
-#endif
-#if (DEBUG && MYTEST)
-                public readonly Image BlackPawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopB.png");
-       // (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopB.png");
-        public readonly Image WhitePawn = Image.FromFile
-        (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopW.png");
-        //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopW.png");
-#endif
+                public readonly Image WhiteBishop = Image.FromFile(Environment.CurrentDirectory + @"\Images\BishopW.png");
+        #endif
+        #if (DEBUG && MYTEST)
+                        public readonly Image BlackBishop;
+                public readonly Image WhiteBishop;
+        #endif
 
         public Bishop(bool white, string currentPos)
         {
+            #if (DEBUG && MYTEST)
+                        var folder = Environment.SpecialFolder.MyDocuments;
+                        if (folder.ToString().Contains("iversoda"))
+                        {
+                            BlackBishop = Image.FromFile
+                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopB.png");
+                            WhiteBishop = Image.FromFile
+                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopW.png");
+                        }
+                        if (folder.ToString().Contains("sternetj"))
+                        {
+                            BlackBishop = Image.FromFile
+                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopB.png");
+                            WhiteBishop = Image.FromFile
+                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\BishopW.png");
+                        }
+            #endif
+
             White = white;
             CurrentPos = currentPos;
         }

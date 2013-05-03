@@ -28,16 +28,29 @@ namespace RaumschachForm
         public readonly Image WhiteUnicorn = Image.FromFile(Environment.CurrentDirectory + @"\Images\UnicornW.png"); 
         #endif
         #if (DEBUG && MYTEST)
-                    public readonly Image BlackPawn = Image.FromFile
-                 (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
-            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
-            public readonly Image WhitePawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
-            //(@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
+                            public readonly Image BlackUnicorn;
+                    public readonly Image WhiteUnicorn;
         #endif
 
         public Unicorn(bool white, string currentPos)
         {
+        #if (DEBUG && MYTEST)
+                    var folder = Environment.SpecialFolder.MyDocuments;
+                    if (folder.ToString().Contains("iversoda"))
+                    {
+                        BlackUnicorn = Image.FromFile
+                         (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
+                        WhiteUnicorn = Image.FromFile
+                        (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
+                    }
+                    if (folder.ToString().Contains("sternetj"))
+                    {
+                        BlackUnicorn = Image.FromFile
+                         (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
+                        WhiteUnicorn = Image.FromFile
+                        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
+                    }
+        #endif
             White = white;
             CurrentPos = currentPos;
         }

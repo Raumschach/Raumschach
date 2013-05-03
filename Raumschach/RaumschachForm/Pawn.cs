@@ -7,22 +7,53 @@ namespace RaumschachForm
 {
     public class Pawn : Piece
     {
-#if (DEBUG && !MYTEST)
-        public readonly Image BlackPawn = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\PawnB.png");
+        private Board.CellNeighbor[,] _WhiteDirections = new[,] 
+            { 
+                { Board.CellNeighbor.Up, Board.CellNeighbor.Up},
+                { Board.CellNeighbor.Backward, Board.CellNeighbor.Backward},
+                { Board.CellNeighbor.Up, Board.CellNeighbor.Right},
+                { Board.CellNeighbor.Up, Board.CellNeighbor.Left},
+                { Board.CellNeighbor.Backward, Board.CellNeighbor.Right},
+                { Board.CellNeighbor.Backward, Board.CellNeighbor.Left}
+            };
+        private Board.CellNeighbor[,] _BlackDirections = new[,] 
+            { 
+                { Board.CellNeighbor.Down, Board.CellNeighbor.Down},
+                { Board.CellNeighbor.Forward, Board.CellNeighbor.Forward},
+                { Board.CellNeighbor.Down, Board.CellNeighbor.Right},
+                { Board.CellNeighbor.Down, Board.CellNeighbor.Left},
+                { Board.CellNeighbor.Forward, Board.CellNeighbor.Right},
+                { Board.CellNeighbor.Forward, Board.CellNeighbor.Left}
+            };
+        #if (DEBUG && MYTEST)
+                public readonly Image BlackPawn = Image.FromFile
+                    (Environment.CurrentDirectory + @"\Images\PawnB.png");
 
-        public readonly Image WhitePawn = Image.FromFile(Environment.CurrentDirectory + @"\Images\PawnW.png");
-#endif
-#if (DEBUG && MYTEST)
-        public readonly Image BlackPawn = Image.FromFile
-           (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
-       // (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
-        public readonly Image WhitePawn = Image.FromFile
-            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
-       // (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
-#endif
+                public readonly Image WhitePawn = Image.FromFile(Environment.CurrentDirectory + @"\Images\PawnW.png");
+        #endif
+        #if (DEBUG && !MYTEST)
+                public readonly Image BlackPawn;
+                public readonly Image WhitePawn;
+        #endif
         public Pawn(bool white, string currentPos)
         {
+        #if (DEBUG && !MYTEST)
+                    var folder = Environment.SpecialFolder.MyDocuments;
+                    if (folder.ToString().Contains("iversoda"))
+                    {
+                        BlackPawn = Image.FromFile
+                         (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
+                        WhitePawn = Image.FromFile
+                        (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
+                    }
+                    if (folder.ToString().Contains("sternetj"))
+                    {
+                        BlackPawn = Image.FromFile
+                         (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
+                        WhitePawn = Image.FromFile
+                        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
+                    }
+        #endif
             White = white;
             CurrentPos = currentPos;
         }
@@ -34,74 +65,25 @@ namespace RaumschachForm
             var colNum = board.GetCellCol(CurrentPos);
             var moves = new List<String>();
 
-            //Black Moves
-            if (!White && boardNum < 4 && !board._board[boardNum + 1][rowNum, colNum].HasPiece())
+            var directions = White ? _WhiteDirections : _BlackDirections;
+            for (var i = 0; i < (directions.Length) / 2; i++)
             {
-                moves.Add(board._board[boardNum + 1][rowNum, colNum].GetName());
-            }
-            if (!White && colNum < 4 && !board._board[boardNum][rowNum, colNum + 1].HasPiece())
-            {
-                moves.Add(board._board[boardNum][rowNum, colNum + 1].GetName());
-            }
-            //Take Down and right
-            if (!White && boardNum < 4 && rowNum < 4 && board._board[boardNum + 1][rowNum + 1, colNum].HasPiece() &&
-                board._board[boardNum + 1][rowNum + 1, colNum].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum + 1][rowNum + 1, colNum].GetName());
-            }
-            //Take Up and left
-            if (!White && boardNum < 4 && rowNum > 0 && board._board[boardNum + 1][rowNum - 1, colNum].HasPiece() &&
-                board._board[boardNum + 1][rowNum - 1, colNum].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum + 1][rowNum - 1, colNum].GetName());
-            }
-            //Take foward and Right
-            if (!White && rowNum < 4 && colNum < 4 && board._board[boardNum][rowNum + 1, colNum + 1].HasPiece() &&
-                board._board[boardNum][rowNum + 1, colNum + 1].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum][rowNum + 1, colNum + 1].GetName());
-            }
-            //Take foward and Left
-            if (!White && rowNum > 0 && colNum < 4 && board._board[boardNum][rowNum - 1, colNum + 1].HasPiece() &&
-                board._board[boardNum][rowNum - 1, colNum + 1].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum][rowNum - 1, colNum + 1]
-                              .GetName());
+                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), directions[i, 0]);
+                if (directions[i, 0] != directions[i, 1])
+                {
+                    currentCell = board.GetNeighborCell(currentCell, directions[i, 1]);
+                    if (currentCell != null && currentCell.HasPiece() && currentCell.GetPiece().White != this.White)
+                    {
+                        moves.Add(currentCell.GetName());
+                    }
+                }else{
+                     if (currentCell != null && !currentCell.HasPiece())
+                    {
+                        moves.Add(currentCell.GetName());
+                    }
+                }
             }
 
-            //White Moves
-            if (White && boardNum > 0 && !board._board[boardNum - 1][rowNum, colNum].HasPiece())
-            {
-                moves.Add(board._board[boardNum - 1][rowNum, colNum].GetName());
-            }
-            if (White && colNum > 0 && !board._board[boardNum][rowNum, colNum - 1].HasPiece())
-            {
-                moves.Add(board._board[boardNum][rowNum, colNum - 1].GetName());
-            }
-            //Take Up and right
-            if (White && boardNum > 0 && rowNum > 0 && board._board[boardNum - 1][rowNum - 1, colNum].HasPiece() &&
-                !board._board[boardNum - 1][rowNum - 1, colNum].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum - 1][rowNum - 1, colNum].GetName());
-            }
-            //Take Up and left
-            if (White && boardNum > 0 && rowNum < 4 && board._board[boardNum - 1][rowNum + 1, colNum].HasPiece() &&
-                !board._board[boardNum - 1][rowNum + 1, colNum].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum - 1][rowNum + 1, colNum].GetName());
-            }
-            //Take foward and Right
-            if (White && rowNum > 0 && colNum > 0 && board._board[boardNum][rowNum - 1, colNum - 1].HasPiece() &&
-                !board._board[boardNum][rowNum - 1, colNum - 1].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum][rowNum - 1, colNum - 1].GetName());
-            }
-            //Take foward and Left
-            if (White && rowNum < 4 && colNum > 0 && board._board[boardNum][rowNum + 1, colNum - 1].HasPiece() &&
-                !board._board[boardNum][rowNum + 1, colNum - 1].GetPiece().White)
-            {
-                moves.Add(board._board[boardNum][rowNum + 1, colNum - 1].GetName());
-            }
             return moves;
 
         }
