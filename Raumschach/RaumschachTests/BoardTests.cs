@@ -12,6 +12,7 @@ namespace RaumschachTests
         {
             target = new Board();
             target.GetCell("Aa1").AddPiece(new Pawn(true,"Aa1"));
+            target._whitePieces.Add(target.GetCell("Aa1").GetPiece());
         }
         [Test]
         public void TestNewBoard(){
@@ -52,9 +53,15 @@ namespace RaumschachTests
         [Test]
         public void MovePieceToPiece()
         {
+            target.GetCell("Ab1").AddPiece(new Pawn(false, "Ab1"));
+            target._blackPieces.Add(target.GetCell("Ab1").GetPiece());
             target.MovePiece("Aa1", "Ab1");
             Assert.IsNull(target._board[0][0, 0].GetPiece());
             Assert.IsTrue(new Pawn(true, "Ab1").Equals(target._board[0][1, 0].GetPiece()));
+            Assert.IsFalse(target._blackPieces.Contains(new Pawn(false, "Ab1")));
+            Assert.IsTrue(target._whitePieces[0].CurrentPos.Equals("Ab1"));
+
+           
         }
         [Test]
         public void TestGetNeighborCell()

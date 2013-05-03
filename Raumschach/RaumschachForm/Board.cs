@@ -6,6 +6,8 @@ namespace RaumschachForm
     public class Board
     {
         public List<Cell[,]> _board;
+        public List<Piece> _whitePieces = new List<Piece>();
+        public List<Piece> _blackPieces = new List<Piece>();
         public Board()
         {
             #region Make Board
@@ -58,6 +60,9 @@ namespace RaumschachForm
 
         public void NewGame()
         {
+            _whitePieces.Clear();
+            _blackPieces.Clear();
+
             _board[0][0, 1].AddPiece(new Pawn(false, "Aa2"));
             _board[0][1, 1].AddPiece(new Pawn(false, "Ab2"));
             _board[0][2, 1].AddPiece(new Pawn(false, "Ac2"));
@@ -100,6 +105,28 @@ namespace RaumschachForm
             _board[3][4, 4].AddPiece(new Unicorn(true, "De5"));
             _board[3][2, 4].AddPiece(new Queen(true, "Dc5"));
             _board[4][2, 4].AddPiece(new King(true, "Ec5"));
+
+            for (var board = 3; board < 5; board++)
+            {
+                for (var col = 3; col < 5; col++)
+                {
+                    for (var row = 0; row < 5; row++)
+                    {
+                        _whitePieces.Add(_board[board][row, col].GetPiece());
+                    }
+                }
+            }
+
+            for (var board = 0; board < 2; board++)
+            {
+                for (var col = 0; col < 2; col++)
+                {
+                    for (var row = 0; row < 5; row++)
+                    {
+                        _blackPieces.Add(_board[board][row, col].GetPiece());
+                    }
+                }
+            }
         }
 
         public void MovePiece(string cellName1, string cellName2)
@@ -108,6 +135,8 @@ namespace RaumschachForm
             var cell2 = _board[GetBoardNumber(cellName2)][GetCellRow(cellName2), GetCellCol(cellName2)];
             var temp = cell1.GetPiece();
             if (temp == null) return;
+            _whitePieces.Remove(cell2.GetPiece());
+            _blackPieces.Remove(cell2.GetPiece());
             cell1.AddPiece(null);
             cell2.AddPiece(temp);
         }

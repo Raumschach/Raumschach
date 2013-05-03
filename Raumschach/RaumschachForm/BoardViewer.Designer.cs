@@ -208,6 +208,7 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.NewGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Ea1
@@ -2135,11 +2136,22 @@
             this.label55.TabIndex = 85;
             this.label55.Text = "1";
             // 
+            // NewGame
+            // 
+            this.NewGame.Location = new System.Drawing.Point(164, 603);
+            this.NewGame.Name = "NewGame";
+            this.NewGame.Size = new System.Drawing.Size(75, 23);
+            this.NewGame.TabIndex = 90;
+            this.NewGame.Text = "NewGame";
+            this.NewGame.UseVisualStyleBackColor = true;
+            this.NewGame.Click += new System.EventHandler(this.NewGame_Click);
+            // 
             // BoardViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1804, 942);
+            this.Controls.Add(this.NewGame);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.label53);
@@ -2509,6 +2521,7 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Button NewGame;
 
     }
 }

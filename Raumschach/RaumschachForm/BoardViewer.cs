@@ -125,5 +125,10 @@ namespace RaumschachForm
             Invoke(new EventHandler(SelectedSquare), panel);
         }
 
+        private void NewGame_Click(object sender, EventArgs e)
+        {
+            _board.NewGame();
+        }
+
     }
 }

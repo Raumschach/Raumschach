@@ -92,13 +92,39 @@ namespace RaumschachForm
            }
 
 
-            return moves;
+            return IsCheck(moves, board);
 
         }
 
         public override Image GetImage()
         {
             return White ? WhiteKing : BlackKing;
+        }
+        public List<string> IsCheck(List<string> moves, Board board)
+        {
+            //var pieces = White ? board._blackPieces : board._whitePieces;
+            var pieces = new List<Piece>();
+            pieces.AddRange(White ? board._blackPieces : board._whitePieces);
+            foreach (var piece in pieces)
+            {
+                if (piece.GetType() == typeof(King)) continue;
+                var piecemoves = piece.GetMoves(board);
+                if (piece.GetType() == typeof(Pawn))
+                {
+                    var copyBoard = board;
+                    foreach (var mv in moves)
+                    {
+                        copyBoard.GetCell(mv).AddPiece(new Pawn(White, mv));
+                    }
+                    piecemoves.AddRange(piece.GetMoves(copyBoard));
+                }
+               
+                foreach (var move in piecemoves)
+                {
+                    moves.Remove(move);
+                }
+            }
+            return moves;
         }
     }
 }
