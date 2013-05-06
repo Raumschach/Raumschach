@@ -208,6 +208,16 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblPlayer2 = new System.Windows.Forms.Label();
+            this.lblPlayer1 = new System.Windows.Forms.Label();
+            this.WhitePlayerTaken = new System.Windows.Forms.FlowLayoutPanel();
+            this.BlackPlayerTaken = new System.Windows.Forms.FlowLayoutPanel();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Ea1
@@ -1808,6 +1818,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.SystemColors.Control;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(649, 223);
             this.label23.Name = "label23";
@@ -2135,11 +2146,95 @@
             this.label55.TabIndex = 85;
             this.label55.Text = "1";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(75, 687);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 61);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "New Game";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.NewGame_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1534, 24);
+            this.menuStrip1.TabIndex = 91;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newGameToolStripMenuItem,
+            this.quitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // newGameToolStripMenuItem
+            // 
+            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGame_Click);
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
+            // lblPlayer2
+            // 
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2.Location = new System.Drawing.Point(72, 471);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(230, 39);
+            this.lblPlayer2.TabIndex = 92;
+            this.lblPlayer2.Text = "Player 2 - Black";
+            // 
+            // lblPlayer1
+            // 
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1.Location = new System.Drawing.Point(968, 75);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(230, 39);
+            this.lblPlayer1.TabIndex = 94;
+            this.lblPlayer1.Text = "Player 1 - White";
+            // 
+            // WhitePlayerTaken
+            // 
+            this.WhitePlayerTaken.Location = new System.Drawing.Point(975, 119);
+            this.WhitePlayerTaken.Margin = new System.Windows.Forms.Padding(0);
+            this.WhitePlayerTaken.Name = "WhitePlayerTaken";
+            this.WhitePlayerTaken.Size = new System.Drawing.Size(540, 100);
+            this.WhitePlayerTaken.TabIndex = 95;
+            // 
+            // BlackPlayerTaken
+            // 
+            this.BlackPlayerTaken.Location = new System.Drawing.Point(79, 515);
+            this.BlackPlayerTaken.Name = "BlackPlayerTaken";
+            this.BlackPlayerTaken.Size = new System.Drawing.Size(540, 100);
+            this.BlackPlayerTaken.TabIndex = 96;
+            // 
             // BoardViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1804, 942);
+            this.ClientSize = new System.Drawing.Size(1534, 760);
+            this.Controls.Add(this.BlackPlayerTaken);
+            this.Controls.Add(this.WhitePlayerTaken);
+            this.Controls.Add(this.lblPlayer1);
+            this.Controls.Add(this.lblPlayer2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.label53);
@@ -2320,8 +2415,12 @@
             this.Controls.Add(this.Ea2);
             this.Controls.Add(this.Ea3);
             this.Controls.Add(this.Ea1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "BoardViewer";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2509,6 +2608,15 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.Label lblPlayer2;
+        private System.Windows.Forms.Label lblPlayer1;
+        private System.Windows.Forms.FlowLayoutPanel WhitePlayerTaken;
+        private System.Windows.Forms.FlowLayoutPanel BlackPlayerTaken;
 
     }
 }

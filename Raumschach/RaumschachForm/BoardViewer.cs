@@ -26,6 +26,7 @@ namespace RaumschachForm
             _board.NewGame();
             moveWhite = true;
             UpdateBoard();
+            lblPlayer1.BackColor = Color.Yellow;
 
         }
 
@@ -38,9 +39,9 @@ namespace RaumschachForm
                    for (var col = 0; col < 5; col++)
                    {
                        var cell = _board._board[brd][row, col];
-                       if (!cell.HasPiece()) continue;
                        var currentPanel = (Panel)Controls.Find(cell.GetName(), true).FirstOrDefault();
-                       if (currentPanel != null) currentPanel.BackgroundImage = cell.GetPiece().GetImage();
+
+                       if (currentPanel != null) currentPanel.BackgroundImage = cell.HasPiece() ? cell.GetPiece().GetImage() : null;
                    }
                }
            }
@@ -71,14 +72,18 @@ namespace RaumschachForm
             {
                 if (!currentMoves.Contains(currentCell.GetName())) return;
                 var clearCell = _board.GetCell(panelToClear.Name);
+                if (currentCell.HasPiece())
+                {
+                    var deletePiece = new Panel { Size = Aa1.Size, BackColor = WhitePlayerTaken.BackColor, BackgroundImage = currentCell.GetPiece().GetImage(), BackgroundImageLayout = Aa1.BackgroundImageLayout };
+                    if (moveWhite) { WhitePlayerTaken.Controls.Add(deletePiece); }
+                    else BlackPlayerTaken.Controls.Add(deletePiece);
+                }
                 moveNextClick = false;
                 currentPanel.BackgroundImage = clearCell.GetPiece().GetImage();
-                panelToClear.BackgroundImage = null;
-                currentMoves.Add(clearCell.GetName());
-                fixColors(currentMoves);
-                _board.MovePiece(clearCell.GetName(),currentCell.GetName());
-                moveWhite = !moveWhite;
-                currentMoves = new List<string>();
+                currentMoves.Add(clearCell.GetName());                
+
+                makeMove();
+                _board.MovePiece(clearCell.GetName(), currentCell.GetName());
             }
             else if (currentCell.HasPiece())
             {
@@ -95,6 +100,16 @@ namespace RaumschachForm
                 panelToClear = currentPanel;
             }
 
+        }
+
+        public void makeMove(){
+            panelToClear.BackgroundImage = null;
+            fixColors(currentMoves);
+            moveWhite = !moveWhite;
+            var color = lblPlayer1.BackColor;
+            lblPlayer1.BackColor = lblPlayer2.BackColor;
+            lblPlayer2.BackColor = color;
+            currentMoves = new List<string>();
         }
 
         public void fixColors(List<string> moves )
@@ -127,7 +142,15 @@ namespace RaumschachForm
 
         private void NewGame_Click(object sender, EventArgs e)
         {
+            _board = new Board();
             _board.NewGame();
+            UpdateBoard();
+            moveWhite = true;
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
     }
