@@ -17,6 +17,7 @@ namespace RaumschachForm
         public Board _board;
         List<string> currentMoves = new List<string>();
         private bool moveWhite;
+        private BackgroundWorker bworker;
 
 
         public BoardViewer()
@@ -28,6 +29,9 @@ namespace RaumschachForm
             UpdateBoard();
             lblPlayer1.BackColor = Color.Yellow;
 
+            bworker = new BackgroundWorker();
+            bworker.DoWork += new DoWorkEventHandler(UpdateMoves);
+            bworker.RunWorkerAsync();
         }
 
        private void UpdateBoard()
@@ -110,6 +114,7 @@ namespace RaumschachForm
             lblPlayer1.BackColor = lblPlayer2.BackColor;
             lblPlayer2.BackColor = color;
             currentMoves = new List<string>();
+            bworker.RunWorkerAsync();
         }
 
         public void fixColors(List<string> moves )
@@ -146,11 +151,38 @@ namespace RaumschachForm
             _board.NewGame();
             UpdateBoard();
             moveWhite = true;
+            lblPlayer1.BackColor = Color.Yellow;
+            lblPlayer2.BackColor = WhitePlayerTaken.BackColor;
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void UpdateMoves(object sender, DoWorkEventArgs e)
+        {
+            if (moveWhite)
+            {
+                var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
+                ((Queen)wQueen).movesSet = false;
+                var wKing = _board._whitePieces.Find(c => c.GetType() == typeof(King));
+                ((King)wKing).movesSet = false;
+
+                ((Queen)wQueen).SetMoves(_board);
+                ((King)wKing).SetMoves(_board);
+            }
+            else
+            {
+                var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
+                ((Queen)bQueen).movesSet = false;
+                var bKing = _board._blackPieces.Find(c => c.GetType() == typeof(King));
+                ((King)bKing).movesSet = false;
+
+                ((Queen)bQueen).SetMoves(_board);
+                ((King)bKing).SetMoves(_board);
+            }
+
         }
 
     }

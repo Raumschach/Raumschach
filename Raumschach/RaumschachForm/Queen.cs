@@ -10,9 +10,10 @@ namespace RaumschachForm
     
     public class Queen: Piece
     {
+        public List<string> movesList;
+        public bool movesSet = false;
 
-
-#if (DEBUG && !MYTEST)
+        #if (DEBUG && !MYTEST)
         public readonly Image BlackQueen = Image.FromFile
             (Environment.CurrentDirectory + @"\Images\QueenB.png"); 
 
@@ -21,39 +22,46 @@ namespace RaumschachForm
         #if (DEBUG && MYTEST)
                     public readonly Image BlackQueen;
             public readonly Image WhiteQueen;
-#endif
+        #endif
 
         public Queen(bool white, string currentPos)
         {
-#if (DEBUG && MYTEST)
-            var folder = Environment.SpecialFolder.MyDocuments;
-            if (folder.ToString().Contains("iversoda"))
-            {
-                BlackQueen = Image.FromFile
-                 (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
-                WhiteQueen = Image.FromFile
-                (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
-            }
-            if (folder.ToString().Contains("sternetj"))
-            {
-                BlackQueen = Image.FromFile
-                 (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
-                WhiteQueen = Image.FromFile
-                (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
-            }
-#endif
+            #if (DEBUG && MYTEST)
+                        var folder = Environment.SpecialFolder.MyDocuments;
+                        if (folder.ToString().Contains("iversoda"))
+                        {
+                            BlackQueen = Image.FromFile
+                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
+                            WhiteQueen = Image.FromFile
+                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
+                        }
+                        if (folder.ToString().Contains("sternetj"))
+                        {
+                            BlackQueen = Image.FromFile
+                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
+                            WhiteQueen = Image.FromFile
+                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
+                        }
+            #endif
             White = white;
             CurrentPos = currentPos;
         }
 
         public override List<string> GetMoves(Board board)
         {
-            var moves = new List<string>();
+            if ( movesSet) return movesList;
+            SetMoves(board);
+            return movesList;
+        }
 
-            moves.AddRange((new Rook(this.White,this.CurrentPos)).GetMoves(board));
-            moves.AddRange((new Bishop(this.White, this.CurrentPos)).GetMoves(board));
-            moves.AddRange((new Unicorn(this.White, this.CurrentPos)).GetMoves(board));
-            return moves;
+        public void SetMoves(Board board)
+        {
+            movesList = new List<string>();
+
+            movesList.AddRange((new Rook(this.White, this.CurrentPos)).GetMoves(board));
+            movesList.AddRange((new Bishop(this.White, this.CurrentPos)).GetMoves(board));
+            movesList.AddRange((new Unicorn(this.White, this.CurrentPos)).GetMoves(board));
+            movesSet = true;
         }
 
         public override Image GetImage()

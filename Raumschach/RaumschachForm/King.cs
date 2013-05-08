@@ -7,6 +7,9 @@ namespace RaumschachForm
 {
     public class King : Piece
     {
+        public List<string> movesList;
+        public bool movesSet = false;
+
         private Board.CellNeighbor[,] _directions = new[,] 
             { 
                 { Board.CellNeighbor.Forward, Board.CellNeighbor.Right},
@@ -52,48 +55,55 @@ namespace RaumschachForm
 
         public override List<string> GetMoves(Board board)
         {
-            var boardNum = board.GetBoardNumber(CurrentPos);
-            var rowNum = board.GetCellRow(CurrentPos);
-            var colNum = board.GetCellCol(CurrentPos);
-            var moves = new List<String>();
-
-           foreach (var direction in Enum.GetValues(typeof(Board.CellNeighbor))){
-               var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), (Board.CellNeighbor) direction);
-               if (currentCell != null && (!currentCell.HasPiece() || (currentCell.HasPiece() && currentCell.GetPiece().White != this.White))){
-                   moves.Add(currentCell.GetName());
-               }
-
-               if (!smallList.Contains((Board.CellNeighbor) direction)){
-                   foreach (var dirc in smallList)
-                   {
-                       var tempCell = board.GetNeighborCell(currentCell, dirc);
-                       if (tempCell != null && (!tempCell.HasPiece() || (tempCell.HasPiece() && tempCell.GetPiece().White != this.White)))
-                       {
-                           moves.Add(tempCell.GetName());
-                       }
-                   }
-               }
-           }
-
-           for (var i = 0; i < (_directions.Length) / 2; i++)
-           {
-                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), _directions[i,0]);
-                currentCell = board.GetNeighborCell(currentCell, _directions[i, 1]);
-                    if (currentCell != null && (!currentCell.HasPiece() || (currentCell.HasPiece() && currentCell.GetPiece().White != this.White))){
-                        moves.Add(currentCell.GetName());
-                    }
-
-               foreach(var dirc in smallList){
-                    var tempCell = board.GetNeighborCell(currentCell, dirc);
-                    if (tempCell != null && (!tempCell.HasPiece() || (tempCell.HasPiece() && tempCell.GetPiece().White != this.White))){
-                        moves.Add(tempCell.GetName());
-                    }
-               }
-           }
-
-
+            if (movesSet) return movesList;
+            var moves = getBasicMoves(board);
             return IsCheck(moves, board);
 
+        }
+
+        public List<string> getBasicMoves(Board board)
+        {
+            var moves = new List<String>();
+            foreach (var direction in Enum.GetValues(typeof(Board.CellNeighbor)))
+            {
+                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), (Board.CellNeighbor)direction);
+                if (currentCell != null && (!currentCell.HasPiece() || (currentCell.HasPiece() && currentCell.GetPiece().White != this.White)))
+                {
+                    moves.Add(currentCell.GetName());
+                }
+
+                if (!smallList.Contains((Board.CellNeighbor)direction))
+                {
+                    foreach (var dirc in smallList)
+                    {
+                        var tempCell = board.GetNeighborCell(currentCell, dirc);
+                        if (tempCell != null && (!tempCell.HasPiece() || (tempCell.HasPiece() && tempCell.GetPiece().White != this.White)))
+                        {
+                            moves.Add(tempCell.GetName());
+                        }
+                    }
+                }
+            }
+
+            for (var i = 0; i < (_directions.Length) / 2; i++)
+            {
+                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), _directions[i, 0]);
+                currentCell = board.GetNeighborCell(currentCell, _directions[i, 1]);
+                if (currentCell != null && (!currentCell.HasPiece() || (currentCell.HasPiece() && currentCell.GetPiece().White != this.White)))
+                {
+                    moves.Add(currentCell.GetName());
+                }
+
+                foreach (var dirc in smallList)
+                {
+                    var tempCell = board.GetNeighborCell(currentCell, dirc);
+                    if (tempCell != null && (!tempCell.HasPiece() || (tempCell.HasPiece() && tempCell.GetPiece().White != this.White)))
+                    {
+                        moves.Add(tempCell.GetName());
+                    }
+                }
+            }
+            return moves;
         }
 
         public override Image GetImage()
@@ -105,26 +115,43 @@ namespace RaumschachForm
             //var pieces = White ? board._blackPieces : board._whitePieces;
             var pieces = new List<Piece>();
             pieces.AddRange(White ? board._blackPieces : board._whitePieces);
+            List<Piece> origPieces = new List<Piece>();
+            List<Cell> origCells = new List<Cell>();
             foreach (var piece in pieces)
             {
-                if (piece.GetType() == typeof(King)) continue;
-                var piecemoves = piece.GetMoves(board);
+                List<string> piecemoves;
+                if (piece.GetType() == typeof(King)) piecemoves = ((King)piece).getBasicMoves(board);
+                else piecemoves = piece.GetMoves(board);
                 if (piece.GetType() == typeof(Pawn))
-                {
-                    var copyBoard = board;
+                {                    
                     foreach (var mv in moves)
                     {
-                        copyBoard.GetCell(mv).AddPiece(new Pawn(White, mv));
+                        origPieces.Add(board.GetCell(mv).GetPiece());
+                        origCells.Add(board.GetCell(mv));
+                        board.GetCell(mv).AddPiece(new Pawn(White, mv));
                     }
-                    piecemoves.AddRange(piece.GetMoves(copyBoard));
+                    piecemoves.AddRange(piece.GetMoves(board));
                 }
                
                 foreach (var move in piecemoves)
                 {
                     moves.Remove(move);
                 }
+
+                for(var i = 0; i< origCells.Count; i++){
+                    board.GetCell((origCells[i]).GetName()).AddPiece(origPieces[i]);
+                }
+
             }
             return moves;
+        }
+
+        public void SetMoves(Board board)
+        {
+            movesList = new List<string>();
+            movesList = getBasicMoves(board);
+            movesList = IsCheck(movesList, board);
+            movesSet = true;
         }
     }
 }
