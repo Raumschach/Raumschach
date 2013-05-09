@@ -1,13 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 
 namespace RaumschachForm
 {
-    public class Board
+    public class Board : ICloneable
     {
         public List<Cell[,]> _board;
         public List<Piece> _whitePieces = new List<Piece>();
         public List<Piece> _blackPieces = new List<Piece>();
+        public List<Board> state = new List<Board>();
+        private BackgroundWorker bworker;
+
         public Board()
         {
             #region Make Board
@@ -56,10 +61,14 @@ namespace RaumschachForm
             };
                  _board = new List<Cell[,]> {tempA,tempB,tempC,tempD,tempE};
             #endregion
+
+            bworker = new BackgroundWorker();
+            bworker.DoWork += new DoWorkEventHandler(addState);
         }
 
         public void NewGame()
         {
+            state = new List<Board>();
             _whitePieces.Clear();
             _blackPieces.Clear();
 
@@ -106,6 +115,7 @@ namespace RaumschachForm
             _board[3][2, 4].AddPiece(new Queen(true, "Dc5"));
             _board[4][2, 4].AddPiece(new King(true, "Ec5"));
 
+
             for (var board = 3; board < 5; board++)
             {
                 for (var col = 3; col < 5; col++)
@@ -127,6 +137,7 @@ namespace RaumschachForm
                     }
                 }
             }
+            bworker.RunWorkerAsync();
         }
 
         public void MovePiece(string cellName1, string cellName2)
@@ -139,6 +150,48 @@ namespace RaumschachForm
             _blackPieces.Remove(cell2.GetPiece());
             cell1.AddPiece(null);
             cell2.AddPiece(temp);
+            bworker.RunWorkerAsync();
+        }
+
+        private void addState(object sender, DoWorkEventArgs e)
+        {
+            state.Add((Board)this.Clone());
+        }
+
+        public object Clone()
+        {
+            var board = new Board();
+            
+                foreach(var p in this._blackPieces){
+                   if (p.GetType() == typeof(King)) board._blackPieces.Add(new King(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Queen)) board._blackPieces.Add(new Queen(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Unicorn)) board._blackPieces.Add(new Unicorn(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Bishop)) board._blackPieces.Add(new Bishop(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Knight)) board._blackPieces.Add(new Knight(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Rook)) board._blackPieces.Add(new Rook(p.White, p.CurrentPos));
+                   if (p.GetType() == typeof(Pawn)) board._blackPieces.Add(new Pawn(p.White, p.CurrentPos));
+
+                    }
+                foreach (var q in this._whitePieces)
+                {
+                    if (q.GetType() == typeof(King)) board._whitePieces.Add(new King(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Queen)) board._whitePieces.Add(new Queen(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Unicorn)) board._whitePieces.Add(new Unicorn(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Bishop)) board._whitePieces.Add(new Bishop(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Knight)) board._whitePieces.Add(new Knight(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Rook)) board._whitePieces.Add(new Rook(q.White, q.CurrentPos));
+                    if (q.GetType() == typeof(Pawn)) board._whitePieces.Add(new Pawn(q.White, q.CurrentPos));
+
+                }
+
+                board._board = (new Board())._board;
+
+                board._whitePieces.ForEach(e => board.GetCell(e.CurrentPos).AddPiece(e));
+                board._blackPieces.ForEach(e => board.GetCell(e.CurrentPos).AddPiece(e));
+
+
+            board.state = this.state;
+            return board;
         }
 
         public Cell GetNeighborCell(Cell currentCell, CellNeighbor neighbor)
@@ -188,6 +241,32 @@ namespace RaumschachForm
             Up,
             Down
         }
+        public bool wCheck()
+        {
+            var king = _whitePieces.Find(c => c.GetType() == typeof(King));
+            foreach (var bPieces in _blackPieces)
+            {
+                if (bPieces.GetMoves(this).Contains(king.CurrentPos))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool bCheck()
+        {
+            var king = _blackPieces.Find(c => c.GetType() == typeof(King));
+            foreach (var wPieces in _whitePieces)
+            {
+                if (wPieces.GetMoves(this).Contains(king.CurrentPos))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
 
         public int GetCellRow(string cellName)
         {

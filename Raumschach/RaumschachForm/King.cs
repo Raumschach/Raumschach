@@ -9,6 +9,7 @@ namespace RaumschachForm
     {
         public List<string> movesList;
         public bool movesSet = false;
+        
 
         private Board.CellNeighbor[,] _directions = new[,] 
             { 
