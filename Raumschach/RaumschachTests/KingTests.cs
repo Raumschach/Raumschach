@@ -41,7 +41,7 @@ namespace RaumschachTests
             board._whitePieces.Add(board.GetCell("Cb4").GetPiece());
             board._blackPieces.Add(board.GetCell("Aa1").GetPiece());
 
-            var tempList = new List<String> { "Cc4", "Bc4", "Dc4", "Cc2", "Bc2", "Dc2", "Cb3", "Bb3", "Db3", "Cd3", "Bd3", "Dd3", "Bc3", "Dc3", "Cd4", "Bd4", "Dd4", "Bb4", "Db4", "Cd2", "Bd2", "Dd2", "Cb2", "Bb2", "Db2" };
+            var tempList = new List<String> { "Cc4", "Bc4", "Dc4", "Cc2", "Bc2", "Dc2", "Cb3", "Bb3", "Db3", "Cd3", "Bd3", "Dd3", "Bc3", "Dc3", "Cd4", "Bd4", "Dd4", "Bb4", "Db4", "Cd2", "Bd2", "Dd2", "Cb2", "Db2" };
             Assert.AreEqual(tempList, target.GetMoves(board));
         }
         [Test]
