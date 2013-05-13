@@ -10,7 +10,6 @@ C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debu
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.exe
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\RaumschachForm.pdb
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.BoardViewer.resources
-C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb
@@ -18,3 +17,7 @@ C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debu
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.GermanResources.resources
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.FrenchResources.resources
 C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.EnglishResources.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.GermanResources.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.FrenchResources.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.EnglishResources.resources
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources

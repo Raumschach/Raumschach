@@ -221,6 +221,7 @@
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.WhitePlayerTaken = new System.Windows.Forms.FlowLayoutPanel();
             this.BlackPlayerTaken = new System.Windows.Forms.FlowLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2203,21 +2204,21 @@
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.frenchToolStripMenuItem.Text = "Français";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.germanToolStripMenuItem.Text = "Deutsch";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
@@ -2227,8 +2228,9 @@
             this.lblPlayer2.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.Location = new System.Drawing.Point(72, 471);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(0, 39);
+            this.lblPlayer2.Size = new System.Drawing.Size(223, 39);
             this.lblPlayer2.TabIndex = 92;
+            this.lblPlayer2.Text = "Player2 - Black";
             // 
             // lblPlayer1
             // 
@@ -2236,8 +2238,9 @@
             this.lblPlayer1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.Location = new System.Drawing.Point(968, 75);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(0, 39);
+            this.lblPlayer1.Size = new System.Drawing.Size(223, 39);
             this.lblPlayer1.TabIndex = 94;
+            this.lblPlayer1.Text = "Player1 - White";
             // 
             // WhitePlayerTaken
             // 
@@ -2254,12 +2257,25 @@
             this.BlackPlayerTaken.Size = new System.Drawing.Size(540, 100);
             this.BlackPlayerTaken.TabIndex = 96;
             // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1328, 687);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(165, 61);
+            this.button2.TabIndex = 97;
+            this.button2.Text = "Undo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // BoardViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1534, 760);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.BlackPlayerTaken);
             this.Controls.Add(this.WhitePlayerTaken);
             this.Controls.Add(this.lblPlayer1);
@@ -2651,6 +2667,7 @@
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
 
     }
 }

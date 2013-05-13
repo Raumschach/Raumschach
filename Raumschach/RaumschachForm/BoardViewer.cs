@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,7 +37,6 @@ namespace RaumschachForm
 
 
             var rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);
-            
 
             //Text
             this.quitToolStripMenuItem.Text = rm.GetString("Quit");
@@ -175,6 +175,8 @@ namespace RaumschachForm
             moveWhite = true;
             lblPlayer1.BackColor = Color.Yellow;
             lblPlayer2.BackColor = WhitePlayerTaken.BackColor;
+            WhitePlayerTaken.Controls.Clear();
+            BlackPlayerTaken.Controls.Clear();
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -223,13 +225,14 @@ namespace RaumschachForm
                 ((King)bKing).SetMoves(_board);
             }
 
+            //_board.addState();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            currentStateIndex--;
-             //_board.state.Remove(_board.state[currentStateIndex + 1]);
-            _board =_board.state[currentStateIndex];
+            _board.state.Remove(_board.state[_board.state.Count -1]);
+            _board = _board.state[_board.state.Count - 1];
             UpdateBoard();
             moveWhite = !moveWhite;
             var color = lblPlayer1.BackColor;

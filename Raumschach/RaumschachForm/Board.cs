@@ -11,7 +11,6 @@ namespace RaumschachForm
         public List<Piece> _whitePieces = new List<Piece>();
         public List<Piece> _blackPieces = new List<Piece>();
         public List<Board> state = new List<Board>();
-        private BackgroundWorker bworker;
 
         public Board()
         {
@@ -61,9 +60,6 @@ namespace RaumschachForm
             };
                  _board = new List<Cell[,]> {tempA,tempB,tempC,tempD,tempE};
             #endregion
-
-            bworker = new BackgroundWorker();
-            bworker.DoWork += new DoWorkEventHandler(addState);
         }
 
         public void NewGame()
@@ -137,7 +133,6 @@ namespace RaumschachForm
                     }
                 }
             }
-            bworker.RunWorkerAsync();
         }
 
         public void MovePiece(string cellName1, string cellName2)
@@ -150,10 +145,9 @@ namespace RaumschachForm
             _blackPieces.Remove(cell2.GetPiece());
             cell1.AddPiece(null);
             cell2.AddPiece(temp);
-            bworker.RunWorkerAsync();
         }
 
-        private void addState(object sender, DoWorkEventArgs e)
+        public void addState()
         {
             state.Add((Board)this.Clone());
         }
