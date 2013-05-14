@@ -63,6 +63,16 @@ namespace RaumschachForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BlackSteel {
+            get {
+                object obj = ResourceManager.GetObject("BlackSteel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RaumschachLogo {
             get {
                 object obj = ResourceManager.GetObject("RaumschachLogo", resourceCulture);
@@ -83,9 +93,29 @@ namespace RaumschachForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wood {
+        internal static System.Drawing.Bitmap SteelDark {
             get {
-                object obj = ResourceManager.GetObject("wood", resourceCulture);
+                object obj = ResourceManager.GetObject("SteelDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SteelLight {
+            get {
+                object obj = ResourceManager.GetObject("SteelLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woodAndLogo {
+            get {
+                object obj = ResourceManager.GetObject("woodAndLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

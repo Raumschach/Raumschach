@@ -96,33 +96,8 @@ namespace RaumschachForm
                 if (currentCell.HasPiece())
                 {
                     var deletePiece = new Panel { Size = Aa1.Size, BackColor = WhitePlayerTaken.BackColor, BackgroundImage = currentCell.GetPiece().GetImage(), BackgroundImageLayout = Aa1.BackgroundImageLayout };
-                    if (moveWhite)
-                    {
-                        if (WhitePlayerTaken.Controls.Count < 5) WhitePlayerTaken.Controls.Add(deletePiece);
-                        else
-                        {
-                            if (WhitePlayerTaken2.Controls.Count < 5) WhitePlayerTaken2.Controls.Add(deletePiece);
-                            else
-                            {
-                                if (WhitePlayerTaken.Controls.Count < 10) WhitePlayerTaken.Controls.Add(deletePiece);
-                                else WhitePlayerTaken2.Controls.Add(deletePiece);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        if (BlackPlayerTaken.Controls.Count < 5) BlackPlayerTaken.Controls.Add(deletePiece);
-                        else
-                        {
-                            if (BlackPlayerTaken2.Controls.Count < 5) BlackPlayerTaken2.Controls.Add(deletePiece);
-                            else
-                            {
-                                if (BlackPlayerTaken.Controls.Count < 10) BlackPlayerTaken.Controls.Add(deletePiece);
-                                else BlackPlayerTaken2.Controls.Add(deletePiece);
-                            }
-                        }
-                        
-                    }
+                    if (moveWhite) { WhitePlayerTaken.Controls.Add(deletePiece); }
+                    else{BlackPlayerTaken.Controls.Add(deletePiece);}
                 }
                 moveNextClick = false;
                 currentPanel.BackgroundImage = clearCell.GetPiece().GetImage();
@@ -252,10 +227,10 @@ namespace RaumschachForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _board.state.Remove(_board.state[_board.state.Count -1]);
-            _board = _board.state[_board.state.Count - 1];
-            UpdateBoard();
-            moveWhite = !moveWhite;
+            //_board.state.Remove(_board.state[_board.state.Count -1]);
+            //_board = _board.state[_board.state.Count - 1];
+            //UpdateBoard();
+            //moveWhite = !moveWhite;
             var color = lblPlayer1.BackColor;
             lblPlayer1.BackColor = lblPlayer2.BackColor;
             lblPlayer2.BackColor = color;
@@ -304,6 +279,30 @@ namespace RaumschachForm
         private void languageToolStripMenuItem_DropDownClosed(object sender, EventArgs e)
         {
             this.languageToolStripMenuItem.ForeColor = Color.White;
+        }
+
+        private void buttonMouseEnter(object sender, EventArgs e)
+        {
+           var btn = (Button)sender;
+            btn.BackgroundImage = global::RaumschachForm.Properties.Resources.SteelLight;
+        }
+
+        private void buttonMouseLeave(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            btn.BackgroundImage = global::RaumschachForm.Properties.Resources.SteelDark;
+        }
+
+        private void buttonMouseDown(object sender, MouseEventArgs e)
+        {
+            var btn = (Button)sender;
+            btn.BackgroundImage = global::RaumschachForm.Properties.Resources.BlackSteel;
+        }
+
+        private void buttonMouseUp(object sender, MouseEventArgs e)
+        {
+            var btn = (Button)sender;
+            btn.BackgroundImage = global::RaumschachForm.Properties.Resources.SteelLight;
         }
 
     }

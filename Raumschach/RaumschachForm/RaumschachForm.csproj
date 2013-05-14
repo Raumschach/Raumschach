@@ -120,13 +120,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wood.jpg" />
+    <None Include="Resources\RaumschachLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woodAndLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SteelDark.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Steel.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RaumschachLogo.png" />
+    <None Include="Resources\SteelLight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackSteel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
