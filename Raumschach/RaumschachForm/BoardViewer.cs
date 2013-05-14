@@ -22,7 +22,6 @@ namespace RaumschachForm
         private BackgroundWorker bworker;
         //private bool wCheck = false;
         private bool bCheck = false;
-        private int currentStateIndex;
 
 
         public BoardViewer()
@@ -32,9 +31,8 @@ namespace RaumschachForm
             _board.NewGame();
             moveWhite = true;
             UpdateBoard();
-            lblPlayer1.BackColor = Color.Yellow;
-            currentStateIndex = 0;
-
+            lblPlayer1.BackColor = Color.Goldenrod;
+            this.menuStrip1.ForeColor = Color.White;
 
             var rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);
 
@@ -98,8 +96,33 @@ namespace RaumschachForm
                 if (currentCell.HasPiece())
                 {
                     var deletePiece = new Panel { Size = Aa1.Size, BackColor = WhitePlayerTaken.BackColor, BackgroundImage = currentCell.GetPiece().GetImage(), BackgroundImageLayout = Aa1.BackgroundImageLayout };
-                    if (moveWhite) { WhitePlayerTaken.Controls.Add(deletePiece); }
-                    else BlackPlayerTaken.Controls.Add(deletePiece);
+                    if (moveWhite)
+                    {
+                        if (WhitePlayerTaken.Controls.Count < 5) WhitePlayerTaken.Controls.Add(deletePiece);
+                        else
+                        {
+                            if (WhitePlayerTaken2.Controls.Count < 5) WhitePlayerTaken2.Controls.Add(deletePiece);
+                            else
+                            {
+                                if (WhitePlayerTaken.Controls.Count < 10) WhitePlayerTaken.Controls.Add(deletePiece);
+                                else WhitePlayerTaken2.Controls.Add(deletePiece);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (BlackPlayerTaken.Controls.Count < 5) BlackPlayerTaken.Controls.Add(deletePiece);
+                        else
+                        {
+                            if (BlackPlayerTaken2.Controls.Count < 5) BlackPlayerTaken2.Controls.Add(deletePiece);
+                            else
+                            {
+                                if (BlackPlayerTaken.Controls.Count < 10) BlackPlayerTaken.Controls.Add(deletePiece);
+                                else BlackPlayerTaken2.Controls.Add(deletePiece);
+                            }
+                        }
+                        
+                    }
                 }
                 moveNextClick = false;
                 currentPanel.BackgroundImage = clearCell.GetPiece().GetImage();
@@ -107,8 +130,6 @@ namespace RaumschachForm
 
                 makeMove();
                 _board.MovePiece(clearCell.GetName(), currentCell.GetName());
-                
-                currentStateIndex++;
             }
             else if (currentCell.HasPiece())
             {
@@ -136,7 +157,7 @@ namespace RaumschachForm
             lblPlayer1.BackColor = lblPlayer2.BackColor;
             lblPlayer2.BackColor = color;
             currentMoves = new List<string>();
-            bworker.RunWorkerAsync();
+            if (!bworker.IsBusy) bworker.RunWorkerAsync();
         }
 
         public void fixColors(List<string> moves )
@@ -173,7 +194,7 @@ namespace RaumschachForm
             _board.NewGame();
             UpdateBoard();
             moveWhite = true;
-            lblPlayer1.BackColor = Color.Yellow;
+            lblPlayer1.BackColor = Color.Goldenrod;
             lblPlayer2.BackColor = WhitePlayerTaken.BackColor;
             WhitePlayerTaken.Controls.Clear();
             BlackPlayerTaken.Controls.Clear();
@@ -205,11 +226,11 @@ namespace RaumschachForm
             if (moveWhite)
             {
                 var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
-                ((Queen)wQueen).movesSet = false;                
-                ((King)wKing).movesSet = false;
+                if (wQueen != null ) ((Queen)wQueen).movesSet = false;
+                if (wKing != null) ((King)wKing).movesSet = false;
 
-                ((Queen)wQueen).SetMoves(_board);
-                ((King)wKing).SetMoves(_board);
+                if (wQueen != null) ((Queen)wQueen).SetMoves(_board);
+                if (wKing != null) ((King)wKing).SetMoves(_board);
 
                 foreach (var bPieces in _board._blackPieces){
 
@@ -218,11 +239,11 @@ namespace RaumschachForm
             else
             {
                 var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
-                ((Queen)bQueen).movesSet = false;
-                ((King)bKing).movesSet = false;
+                if (bQueen != null) ((Queen)bQueen).movesSet = false;
+                if (bKing != null) ((King)bKing).movesSet = false;
 
-                ((Queen)bQueen).SetMoves(_board);
-                ((King)bKing).SetMoves(_board);
+                if (bQueen != null) ((Queen)bQueen).SetMoves(_board);
+                if (bKing != null) ((King)bKing).SetMoves(_board);
             }
 
             //_board.addState();
@@ -263,6 +284,26 @@ namespace RaumschachForm
             this.button1.Text = rm.GetString("NewGame");
             this.languageToolStripMenuItem.Text = rm.GetString("Language");
             //
+        }
+
+        private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            this.fileToolStripMenuItem.ForeColor = Color.Black;
+        }
+
+        private void fileToolStripMenuItem_DropDownClosed(object sender, EventArgs e)
+        {
+            this.fileToolStripMenuItem.ForeColor = Color.White;
+        }
+
+        private void languageToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+            this.languageToolStripMenuItem.ForeColor = Color.Black;
+        }
+
+        private void languageToolStripMenuItem_DropDownClosed(object sender, EventArgs e)
+        {
+            this.languageToolStripMenuItem.ForeColor = Color.White;
         }
 
     }
