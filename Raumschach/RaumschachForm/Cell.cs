@@ -30,9 +30,16 @@
             return _previousPiece;
         }
 
-        public void RestorePreviousPiece()
+        public void RestorePreviousPiece(Board board)
         {
             _piece = _previousPiece;
+
+            if (_piece != null)
+            {
+                _piece.CurrentPos = this._name;
+                if (_piece.White && !board._whitePieces.Contains(_piece)) board._whitePieces.Add(_piece);
+                else if (!_piece.White && !board._blackPieces.Contains(_piece)) board._blackPieces.Add(_piece);
+            }            
             _previousPiece = null;
         }
 

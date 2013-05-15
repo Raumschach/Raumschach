@@ -47,6 +47,17 @@ namespace RaumschachForm
             CurrentPos = currentPos;
         }
 
+        public override List<string> GetBasicMoves(Board board)
+        {
+           var moves = new List<string>();
+
+            moves.AddRange((new Rook(this.White, this.CurrentPos)).GetBasicMoves(board));
+            moves.AddRange((new Bishop(this.White, this.CurrentPos)).GetBasicMoves(board));
+            moves.AddRange((new Unicorn(this.White, this.CurrentPos)).GetBasicMoves(board));
+
+            return moves;
+        }
+
         public override List<string> GetMoves(Board board)
         {
             if ( movesSet) return movesList;

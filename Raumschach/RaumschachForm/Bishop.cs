@@ -60,9 +60,9 @@ namespace RaumschachForm
             CurrentPos = currentPos;
         }
 
-        public override List<string> GetMoves(Board board)
+        public override List<string> GetBasicMoves(Board board)
         {
-
+            
             var moves = new List<string>();
             for (var i = 0; i < (_directions.Length)/2; i++)
             {
@@ -79,8 +79,13 @@ namespace RaumschachForm
                     currentCell = board.GetNeighborCell(currentCell, _directions[i, 1]);
                 }
             }
-
             return moves;
+        }
+
+        public override List<string> GetMoves(Board board)
+        {
+
+            return validMoves(this.GetBasicMoves(board), board);
         }
 
         public override Image GetImage()

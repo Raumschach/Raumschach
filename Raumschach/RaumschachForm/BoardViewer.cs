@@ -20,7 +20,7 @@ namespace RaumschachForm
         List<string> currentMoves = new List<string>();
         private bool moveWhite;
         private BackgroundWorker bworker;
-        //private bool wCheck = false;
+        private bool wCheck = false;
         private bool bCheck = false;
 
 
@@ -45,7 +45,7 @@ namespace RaumschachForm
             this.button1.Text = rm.GetString("NewGame");
             this.languageToolStripMenuItem.Text = rm.GetString("Language");
             //
-            
+
             bworker = new BackgroundWorker();
             bworker.DoWork += new DoWorkEventHandler(UpdateMoves);
             bworker.RunWorkerAsync();
@@ -108,7 +108,8 @@ namespace RaumschachForm
             }
             else if (currentCell.HasPiece())
             {
-                currentPanel.BackColor = Color.Red;
+                if(currentCell.GetPiece().GetType() != typeof(King))currentPanel.BackColor = Color.Red;
+                //else if (!(bCheck || wCheck)) currentPanel.BackColor = Color.Red;
 
                 currentMoves = currentCell.GetPiece().GetMoves(_board);
 
@@ -132,7 +133,7 @@ namespace RaumschachForm
             lblPlayer1.BackColor = lblPlayer2.BackColor;
             lblPlayer2.BackColor = color;
             currentMoves = new List<string>();
-            if (!bworker.IsBusy) bworker.RunWorkerAsync();
+            //if (!bworker.IsBusy) bworker.RunWorkerAsync();
         }
 
         public void fixColors(List<string> moves )
@@ -180,48 +181,43 @@ namespace RaumschachForm
             Close();
         }
 
-        private bool wCheck()
-        {
-            var king = _board._whitePieces.Find(c => c.GetType() == typeof(King));
-            foreach (var bPieces in _board._blackPieces)
-            {
-                if (bPieces.GetMoves(_board).Contains(king.CurrentPos)){
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private void UpdateMoves(object sender, DoWorkEventArgs e)
         {
             var bKing = _board._blackPieces.Find(c => c.GetType() == typeof(King));
             var wKing = _board._whitePieces.Find(c => c.GetType() == typeof(King));
            
 
-            if (moveWhite)
+            //if (moveWhite)
+            //{
+            //    var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
+            //    if (wQueen != null ) ((Queen)wQueen).movesSet = false;
+            //    if (wKing != null) ((King)wKing).movesSet = false;
+
+            //    if (wQueen != null) ((Queen)wQueen).SetMoves(_board);
+            //    if (wKing != null) ((King)wKing).SetMoves(_board);
+
+            //}
+            //else
+            //{
+            //    var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
+            //    if (bQueen != null) ((Queen)bQueen).movesSet = false;
+            //    if (bKing != null) ((King)bKing).movesSet = false;
+
+            //    if (bQueen != null) ((Queen)bQueen).SetMoves(_board);
+            //    if (bKing != null) ((King)bKing).SetMoves(_board);
+            //}
+
+            while (true)
             {
-                var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
-                if (wQueen != null ) ((Queen)wQueen).movesSet = false;
-                if (wKing != null) ((King)wKing).movesSet = false;
+                var board = (Board)_board.Clone();
+                if (board == null) continue;
+                if (board.wCheck()) ((Panel)Controls.Find(wKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
+                else fixColors(new List<string>{wKing.CurrentPos});
 
-                if (wQueen != null) ((Queen)wQueen).SetMoves(_board);
-                if (wKing != null) ((King)wKing).SetMoves(_board);
+                if (board.bCheck()) ((Panel)Controls.Find(bKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
+                else fixColors(new List<string> { bKing.CurrentPos });
 
-                foreach (var bPieces in _board._blackPieces){
-
-                }
             }
-            else
-            {
-                var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
-                if (bQueen != null) ((Queen)bQueen).movesSet = false;
-                if (bKing != null) ((King)bKing).movesSet = false;
-
-                if (bQueen != null) ((Queen)bQueen).SetMoves(_board);
-                if (bKing != null) ((King)bKing).SetMoves(_board);
-            }
-
-            //_board.addState();
 
         }
 

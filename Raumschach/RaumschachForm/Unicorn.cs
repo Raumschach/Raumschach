@@ -55,14 +55,14 @@ namespace RaumschachForm
             CurrentPos = currentPos;
         }
 
-        public override List<string> GetMoves(Board board)
+        public override List<string> GetBasicMoves(Board board)
         {
             var moves = new List<string>();
 
             foreach (var mainDirc in smallList)
             {
-                
-                for (var i = 0; i < (_directions.Length)/2; i++)
+
+                for (var i = 0; i < (_directions.Length) / 2; i++)
                 {
                     var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), mainDirc);
                     currentCell = board.GetNeighborCell(currentCell, _directions[i, 0]);
@@ -80,8 +80,14 @@ namespace RaumschachForm
                     }
                 }
             }
-
             return moves;
+        }
+
+        public override List<string> GetMoves(Board board)
+        {
+            
+
+            return validMoves(this.GetBasicMoves(board), board);
         }
 
         public override Image GetImage()

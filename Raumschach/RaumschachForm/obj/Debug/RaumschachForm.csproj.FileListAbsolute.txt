@@ -20,3 +20,4 @@ C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debu
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.csproj.GenerateResource.Cache
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.exe
 C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.pdb
+C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\obj\Debug\RaumschachForm.Properties.Resources.resources

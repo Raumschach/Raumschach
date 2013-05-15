@@ -46,9 +46,9 @@ namespace RaumschachForm
             CurrentPos = currentPos;
         }
 
-        public override List<string> GetMoves(Board board)
+        public override List<string> GetBasicMoves(Board board)
         {
-            var moves = new List<string>();
+             var moves = new List<string>();
 
             foreach (var mainDirc in Enum.GetValues(typeof(Board.CellNeighbor)))
             {
@@ -68,6 +68,13 @@ namespace RaumschachForm
             }
 
             return moves;
+        }
+
+        public override List<string> GetMoves(Board board)
+        {
+           
+
+            return validMoves(this.GetBasicMoves(board), board);
         }
 
         public override Image GetImage()

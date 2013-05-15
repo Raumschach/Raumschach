@@ -43,13 +43,14 @@ namespace RaumschachForm
             CurrentPos = currentPos;
         }
 
-        public override List<string> GetMoves(Board board)
+        public override List<string> GetBasicMoves(Board board)
         {
+
             var moves = new List<string>();
 
             foreach (var direction in Enum.GetValues(typeof(Board.CellNeighbor)))
             {
-                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), (Board.CellNeighbor) direction);
+                var currentCell = board.GetNeighborCell(board.GetCell(CurrentPos), (Board.CellNeighbor)direction);
 
                 while (currentCell != null && (currentCell.GetPiece() == null || currentCell.GetPiece().White != White))
                 {
@@ -58,8 +59,12 @@ namespace RaumschachForm
                     currentCell = board.GetNeighborCell(currentCell, (Board.CellNeighbor)direction);
                 }
             }
-
             return moves;
+        }
+
+        public override List<string> GetMoves(Board board)
+        {
+            return validMoves(GetBasicMoves(board), board);
         }
 
         public override Image GetImage()

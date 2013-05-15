@@ -57,12 +57,12 @@ namespace RaumschachForm
         public override List<string> GetMoves(Board board)
         {
             if (movesSet) return movesList;
-            var moves = getBasicMoves(board);
+            var moves = GetBasicMoves(board);
             return IsCheck(moves, board);
 
         }
 
-        public List<string> getBasicMoves(Board board)
+        public override List<string> GetBasicMoves(Board board)
         {
             var moves = new List<String>();
             foreach (var direction in Enum.GetValues(typeof(Board.CellNeighbor)))
@@ -121,8 +121,7 @@ namespace RaumschachForm
             foreach (var piece in pieces)
             {
                 List<string> piecemoves;
-                if (piece.GetType() == typeof(King)) piecemoves = ((King)piece).getBasicMoves(board);
-                else piecemoves = piece.GetMoves(board);
+                 piecemoves = piece.GetBasicMoves(board);
                 if (piece.GetType() == typeof(Pawn))
                 {                    
                     foreach (var mv in moves)
@@ -150,7 +149,7 @@ namespace RaumschachForm
         public void SetMoves(Board board)
         {
             movesList = new List<string>();
-            movesList = getBasicMoves(board);
+            movesList = GetBasicMoves(board);
             movesList = IsCheck(movesList, board);
             movesSet = true;
         }

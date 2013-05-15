@@ -155,17 +155,19 @@ namespace RaumschachForm
         public object Clone()
         {
             var board = new Board();
-            
-                foreach(var p in this._blackPieces){
-                   if (p.GetType() == typeof(King)) board._blackPieces.Add(new King(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Queen)) board._blackPieces.Add(new Queen(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Unicorn)) board._blackPieces.Add(new Unicorn(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Bishop)) board._blackPieces.Add(new Bishop(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Knight)) board._blackPieces.Add(new Knight(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Rook)) board._blackPieces.Add(new Rook(p.White, p.CurrentPos));
-                   if (p.GetType() == typeof(Pawn)) board._blackPieces.Add(new Pawn(p.White, p.CurrentPos));
+            try
+            {
+                foreach (var p in this._blackPieces)
+                {
+                    if (p.GetType() == typeof(King)) board._blackPieces.Add(new King(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Queen)) board._blackPieces.Add(new Queen(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Unicorn)) board._blackPieces.Add(new Unicorn(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Bishop)) board._blackPieces.Add(new Bishop(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Knight)) board._blackPieces.Add(new Knight(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Rook)) board._blackPieces.Add(new Rook(p.White, p.CurrentPos));
+                    if (p.GetType() == typeof(Pawn)) board._blackPieces.Add(new Pawn(p.White, p.CurrentPos));
 
-                    }
+                }
                 foreach (var q in this._whitePieces)
                 {
                     if (q.GetType() == typeof(King)) board._whitePieces.Add(new King(q.White, q.CurrentPos));
@@ -177,6 +179,10 @@ namespace RaumschachForm
                     if (q.GetType() == typeof(Pawn)) board._whitePieces.Add(new Pawn(q.White, q.CurrentPos));
 
                 }
+            }
+            catch { 
+                return null; 
+            }
 
                 board._board = (new Board())._board;
 
@@ -238,9 +244,10 @@ namespace RaumschachForm
         public bool wCheck()
         {
             var king = _whitePieces.Find(c => c.GetType() == typeof(King));
-            foreach (var bPieces in _blackPieces)
+            foreach (var bPiece in _blackPieces)
             {
-                if (bPieces.GetMoves(this).Contains(king.CurrentPos))
+                var moves = bPiece.GetBasicMoves(this);
+                if (moves.Count != 0 && moves.Contains(king.CurrentPos))
                 {
                     return true;
                 }
@@ -251,9 +258,10 @@ namespace RaumschachForm
         public bool bCheck()
         {
             var king = _blackPieces.Find(c => c.GetType() == typeof(King));
-            foreach (var wPieces in _whitePieces)
+            foreach (var wPiece in _whitePieces)
             {
-                if (wPieces.GetMoves(this).Contains(king.CurrentPos))
+                var moves = wPiece.GetBasicMoves(this);
+                if (moves.Count != 0 && moves.Contains(king.CurrentPos))
                 {
                     return true;
                 }
