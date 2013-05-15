@@ -268,6 +268,30 @@ namespace RaumschachForm
             }
             return false;
         }
+        public bool wCheckmate()
+        {
+            if (wCheck())
+            {
+                foreach (Piece piece in _whitePieces)
+                {
+                    if (piece.GetMoves(this).Count != 0) return false;
+                }
+                return true;
+            }
+            return false;
+        }
+        public bool bCheckmate()
+        {
+            if (bCheck())
+            {
+                foreach (Piece piece in _blackPieces)
+                {
+                    if (piece.GetMoves(this).Count != 0) return false;
+                }
+                return true;
+            }
+            return false;
+        }
 
 
         public int GetCellRow(string cellName)

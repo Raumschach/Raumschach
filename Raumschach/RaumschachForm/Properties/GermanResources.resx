@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bWinner" xml:space="preserve">
+    <value>Schwarz ist die Winner!</value>
+  </data>
+  <data name="Checkmate" xml:space="preserve">
+    <value>Schachmatt?</value>
+  </data>
   <data name="File" xml:space="preserve">
     <value>Akte</value>
   </data>
@@ -126,6 +132,9 @@
   <data name="NewGame" xml:space="preserve">
     <value>Neues Spiel</value>
   </data>
+  <data name="nWinner" xml:space="preserve">
+    <value />
+  </data>
   <data name="Player1" xml:space="preserve">
     <value>Spieler 1 - Weiß</value>
   </data>
@@ -134,5 +143,8 @@
   </data>
   <data name="Quit" xml:space="preserve">
     <value>Kündigen</value>
+  </data>
+  <data name="wWinner" xml:space="preserve">
+    <value>Weiß ist die Winner!</value>
   </data>
 </root>

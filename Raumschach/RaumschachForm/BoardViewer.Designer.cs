@@ -162,8 +162,9 @@
             this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.WinnerLabel = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.WhitePlayerTaken = new System.Windows.Forms.FlowLayoutPanel();
             this.label56 = new System.Windows.Forms.Label();
@@ -228,8 +229,10 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Ea1
@@ -1607,13 +1610,13 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGame_Click);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
@@ -1630,21 +1633,21 @@
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.frenchToolStripMenuItem.Text = "Français";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.germanToolStripMenuItem.Text = "Deutsch";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
@@ -1666,8 +1669,9 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::RaumschachForm.Properties.Resources.woodAndLogo;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.WinnerLabel);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.WhitePlayerTaken);
             this.panel1.Controls.Add(this.label56);
@@ -1739,6 +1743,30 @@
             this.panel1.Size = new System.Drawing.Size(1564, 762);
             this.panel1.TabIndex = 98;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Impact", 12F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.languageToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(32, 24);
+            this.menuStrip1.TabIndex = 91;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // WinnerLabel
+            // 
+            this.WinnerLabel.AutoSize = true;
+            this.WinnerLabel.Font = new System.Drawing.Font("Impact", 28F, System.Drawing.FontStyle.Bold);
+            this.WinnerLabel.Location = new System.Drawing.Point(600, 25);
+            this.WinnerLabel.Name = "WinnerLabel";
+            this.WinnerLabel.Size = new System.Drawing.Size(0, 46);
+            this.WinnerLabel.TabIndex = 99;
+            // 
             // button2
             // 
             this.button2.BackgroundImage = global::RaumschachForm.Properties.Resources.SteelDark;
@@ -1748,29 +1776,17 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Impact", 22F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(1318, 687);
+            this.button2.Location = new System.Drawing.Point(1282, 687);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 61);
+            this.button2.Size = new System.Drawing.Size(211, 61);
             this.button2.TabIndex = 97;
-            this.button2.Text = "Undo";
+            this.button2.Text = "Checkmate?";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonMouseDown);
             this.button2.MouseEnter += new System.EventHandler(this.buttonMouseEnter);
             this.button2.MouseLeave += new System.EventHandler(this.buttonMouseLeave);
             this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonMouseUp);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Impact", 12F);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
-            this.menuStrip1.TabIndex = 91;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // button1
             // 
@@ -1782,9 +1798,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Impact", 22F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(57, 687);
+            this.button1.Location = new System.Drawing.Point(75, 687);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 61);
+            this.button1.Size = new System.Drawing.Size(211, 61);
             this.button1.TabIndex = 90;
             this.button1.Text = "New Game";
             this.button1.UseVisualStyleBackColor = true;
@@ -1859,9 +1875,9 @@
             this.lblPlayer2.ForeColor = System.Drawing.Color.White;
             this.lblPlayer2.Location = new System.Drawing.Point(72, 473);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(223, 39);
+            this.lblPlayer2.Size = new System.Drawing.Size(230, 39);
             this.lblPlayer2.TabIndex = 92;
-            this.lblPlayer2.Text = "Player2 - Black";
+            this.lblPlayer2.Text = "Player 2 - Black";
             // 
             // label53
             // 
@@ -2433,9 +2449,9 @@
             this.lblPlayer1.ForeColor = System.Drawing.Color.White;
             this.lblPlayer1.Location = new System.Drawing.Point(934, 74);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(223, 39);
+            this.lblPlayer1.Size = new System.Drawing.Size(230, 39);
             this.lblPlayer1.TabIndex = 94;
-            this.lblPlayer1.Text = "Player1 - White";
+            this.lblPlayer1.Text = "Player 1 - White";
             // 
             // BlackPlayerTaken
             // 
@@ -2540,6 +2556,12 @@
             this.label23.Size = new System.Drawing.Size(28, 26);
             this.label23.TabIndex = 52;
             this.label23.Text = "C";
+            // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.testToolStripMenuItem.Text = "Test";
             // 
             // BoardViewer
             // 
@@ -2680,6 +2702,8 @@
             this.toolStripContainer1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2885,6 +2909,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private System.Windows.Forms.Label WinnerLabel;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
 
     }
 }

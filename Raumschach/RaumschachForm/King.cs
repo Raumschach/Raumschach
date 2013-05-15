@@ -58,7 +58,7 @@ namespace RaumschachForm
         {
             if (movesSet) return movesList;
             var moves = GetBasicMoves(board);
-            return IsCheck(moves, board);
+            return validMoves(moves, board);
 
         }
 

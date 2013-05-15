@@ -61,6 +61,24 @@ namespace RaumschachForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Le noir est le gagnant!.
+        /// </summary>
+        internal static string bWinner {
+            get {
+                return ResourceManager.GetString("bWinner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Échec et mat?.
+        /// </summary>
+        internal static string Checkmate {
+            get {
+                return ResourceManager.GetString("Checkmate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dossier.
         /// </summary>
         internal static string File {
@@ -88,6 +106,15 @@ namespace RaumschachForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pas de gagnant pour le moment!.
+        /// </summary>
+        internal static string nWinner {
+            get {
+                return ResourceManager.GetString("nWinner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Joueur 1 - Blanc.
         /// </summary>
         internal static string Player1 {
@@ -111,6 +138,15 @@ namespace RaumschachForm.Properties {
         internal static string Quit {
             get {
                 return ResourceManager.GetString("Quit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Le blanc est le gagnant!.
+        /// </summary>
+        internal static string wWinner {
+            get {
+                return ResourceManager.GetString("wWinner", resourceCulture);
             }
         }
     }

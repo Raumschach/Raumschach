@@ -22,6 +22,7 @@ namespace RaumschachForm
         private BackgroundWorker bworker;
         private bool wCheck = false;
         private bool bCheck = false;
+        ResourceManager rm;
 
 
         public BoardViewer()
@@ -34,7 +35,7 @@ namespace RaumschachForm
             lblPlayer1.BackColor = Color.Goldenrod;
             this.menuStrip1.ForeColor = Color.White;
 
-            var rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);
+            rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);
 
             //Text
             this.quitToolStripMenuItem.Text = rm.GetString("Quit");
@@ -44,6 +45,7 @@ namespace RaumschachForm
             this.newGameToolStripMenuItem.Text = rm.GetString("NewGame");
             this.button1.Text = rm.GetString("NewGame");
             this.languageToolStripMenuItem.Text = rm.GetString("Language");
+            this.button2.Text = rm.GetString("Checkmate");
             //
 
             bworker = new BackgroundWorker();
@@ -108,8 +110,18 @@ namespace RaumschachForm
             }
             else if (currentCell.HasPiece())
             {
+                if (!moveWhite)
+                {
+                    var bQueen = _board._blackPieces.Find(c => c.GetType() == typeof(Queen));
+                    if (bQueen != null) ((Queen)bQueen).movesSet = false;
+                }
+                else
+                {
+                    var wQueen = _board._whitePieces.Find(c => c.GetType() == typeof(Queen));
+                    if (wQueen != null) ((Queen)wQueen).movesSet = false;
+                }
+
                 if(currentCell.GetPiece().GetType() != typeof(King))currentPanel.BackColor = Color.Red;
-                //else if (!(bCheck || wCheck)) currentPanel.BackColor = Color.Red;
 
                 currentMoves = currentCell.GetPiece().GetMoves(_board);
 
@@ -223,19 +235,45 @@ namespace RaumschachForm
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button2.Enabled = false;
+            if (moveWhite) {
+                if (_board.wCheckmate())
+                {
+                    WinnerLabel.Text = rm.GetString("bWinner");
+                    WinnerLabel.Refresh();
+                    button2.Enabled = true;
+                    return;
+                }
+            }
+            else {
+                if (_board.bCheckmate())
+                {
+                    WinnerLabel.Text = rm.GetString("wWinner");
+                    WinnerLabel.Refresh();
+                    button2.Enabled = true;
+                    return;
+                }                
+            }
+            WinnerLabel.Text = rm.GetString("nWinner");
+            WinnerLabel.Refresh();
+            System.Threading.Thread.Sleep(1500);
+            WinnerLabel.Text = "";
+            WinnerLabel.Refresh();
+            button2.Enabled = true;
+
             //_board.state.Remove(_board.state[_board.state.Count -1]);
             //_board = _board.state[_board.state.Count - 1];
             //UpdateBoard();
             //moveWhite = !moveWhite;
-            var color = lblPlayer1.BackColor;
-            lblPlayer1.BackColor = lblPlayer2.BackColor;
-            lblPlayer2.BackColor = color;
+            //var color = lblPlayer1.BackColor;
+            //lblPlayer1.BackColor = lblPlayer2.BackColor;
+            //lblPlayer2.BackColor = color;
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var language = ((ToolStripMenuItem)sender).Text;
-            ResourceManager rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);;
+            rm = new ResourceManager("RaumschachForm.Properties.EnglishResources", typeof(BoardViewer).Assembly);
             switch (language)
             {
                 case "Français":
@@ -254,6 +292,7 @@ namespace RaumschachForm
             this.newGameToolStripMenuItem.Text = rm.GetString("NewGame");
             this.button1.Text = rm.GetString("NewGame");
             this.languageToolStripMenuItem.Text = rm.GetString("Language");
+            this.button2.Text = rm.GetString("Checkmate");
             //
         }
 
