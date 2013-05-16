@@ -21,8 +21,8 @@ namespace RaumschachForm
         private bool moveWhite;
         private BackgroundWorker bworker;
         private BackgroundWorker bworker2;
-        private bool wCheck = false;
-        private bool bCheck = false;
+        public static bool wCheck = false;
+        public static bool bCheck = false;
         ResourceManager rm;
 
 
@@ -125,15 +125,14 @@ namespace RaumschachForm
                     if (wQueen != null) ((Queen)wQueen).movesSet = false;
                 }
 
-                if(currentCell.GetPiece().GetType() != typeof(King))currentPanel.BackColor = Color.Red;
+                if (currentCell.GetPiece().GetType() != typeof(King)) currentPanel.BackColor = Color.Red;
+                else currentPanel.BackColor = currentPanel.BackColor != Color.OrangeRed ? Color.Red : Color.OrangeRed;
 
                 currentMoves = currentCell.GetPiece().GetMoves(_board);
 
-                foreach (
-                    var tempPanel in currentMoves.Select(move => (Panel) Controls.Find(move, true).FirstOrDefault()))
+                foreach (var tempPanel in currentMoves.Select(move => (Panel) Controls.Find(move, true).FirstOrDefault()))
                 {
-                    if (tempPanel.Name != currentPanel.Name)
-                        tempPanel.BackColor = Color.Yellow;
+                    tempPanel.BackColor = Color.Yellow;
                 }
                 moveNextClick = true;
                 panelToClear = currentPanel;
@@ -190,6 +189,12 @@ namespace RaumschachForm
             lblPlayer2.BackColor = WhitePlayerTaken.BackColor;
             WhitePlayerTaken.Controls.Clear();
             BlackPlayerTaken.Controls.Clear();
+            moveNextClick = false;
+            if (panelToClear != null)
+            {
+                currentMoves.Add(panelToClear.Name);
+                fixColors(currentMoves);
+            }
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -206,11 +211,27 @@ namespace RaumschachForm
             {
                 var board = (Board)_board.Clone();
                 if (board == null) continue;
-                if (board.wCheck()) ((Panel)Controls.Find(wKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
-                else fixColors(new List<string>{wKing.CurrentPos});
+                if (board.wCheck())
+                {
+                    ((Panel)Controls.Find(wKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
+                    wCheck = true;
+                }
+                else
+                {
+                    fixColors(new List<string> { wKing.CurrentPos });
+                    wCheck = false;
+                }
 
-                if (board.bCheck()) ((Panel)Controls.Find(bKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
-                else fixColors(new List<string> { bKing.CurrentPos });
+                if (board.bCheck())
+                {
+                    ((Panel)Controls.Find(bKing.CurrentPos, true).FirstOrDefault()).BackColor = Color.OrangeRed;
+                    bCheck = true;
+                }
+                else
+                {
+                    fixColors(new List<string> { bKing.CurrentPos });
+                    bCheck = false;
+                }
 
             }
 

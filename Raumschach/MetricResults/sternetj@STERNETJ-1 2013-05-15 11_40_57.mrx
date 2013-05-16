@@ -1,0 +1,2477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="10">
+   <Targets>
+      <Target Name="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RaumschachTests.csproj">
+         <Modules>
+            <Module Name="RaumschachTests.dll" AssemblyVersion="" FileVersion="">
+               <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="66" />
+                  <Metric Name="CyclomaticComplexity" Value="88" />
+                  <Metric Name="ClassCoupling" Value="21" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="LinesOfCode" Value="700" />
+               </Metrics>
+               <Namespaces>
+                  <Namespace Name="RaumschachTests">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="66" />
+                        <Metric Name="CyclomaticComplexity" Value="88" />
+                        <Metric Name="ClassCoupling" Value="21" />
+                        <Metric Name="DepthOfInheritance" Value="0" />
+                        <Metric Name="LinesOfCode" Value="700" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="BoardTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="71" />
+                              <Metric Name="CyclomaticComplexity" Value="9" />
+                              <Metric Name="ClassCoupling" Value="10" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="39" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="addInitialPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="9" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewBoard() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="16" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePieceToEmpty() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="24" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="74" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePieceFromNullToNull() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="31" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePieceFromNullToPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="39" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="74" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePieceToItself() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="46" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePieceToPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="52" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetNeighborCell() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="65" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestIsSameOrOpposite() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardTests.cs" Line="75" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="KingTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="56" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="108" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestNewKing() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KingTests.cs" Line="12" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="68" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KingTests.cs" Line="23" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="50" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="30" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithBlocker() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KingTests.cs" Line="31" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="47" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="33" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithTakeable() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KingTests.cs" Line="46" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="47" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="33" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetImage() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KingTests.cs" Line="60" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="67" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="QueenTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="60" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="168" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSetup() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\QueenTests.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewQueen() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\QueenTests.cs" Line="19" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\QueenTests.cs" Line="26" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="43" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="55" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithObstructionBlack() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\QueenTests.cs" Line="33" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="43" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="54" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithObstructionWhite() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\QueenTests.cs" Line="41" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="43" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="55" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="UnicornTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="67" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="65" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSetup() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\UnicornTests.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewUnicorn() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\UnicornTests.cs" Line="19" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesEmpty() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\UnicornTests.cs" Line="26" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="55" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="20" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesWithWhitePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\UnicornTests.cs" Line="35" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="20" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesWithBlackPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\UnicornTests.cs" Line="46" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="53" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="21" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="KnightTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="67" />
+                              <Metric Name="CyclomaticComplexity" Value="12" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="72" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSetup() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewKnight() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="19" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestKnightGetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="27" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="52" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="27" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestKnightInCorner() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="34" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestKnightWithBlockingPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="41" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="10" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestKnightWithTakeablePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="50" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="60" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="11" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestKnightWithSomeMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\KnightTests.cs" Line="59" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="62" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="11" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RookTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="69" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="48" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSetup() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RookTests.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewRook() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RookTests.cs" Line="19" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RookTests.cs" Line="26" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="58" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="15" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithObstructionBlack() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RookTests.cs" Line="33" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="58" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPieceGetMovesWithObstructionWhite() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\RookTests.cs" Line="41" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="58" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="15" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="PawnTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="66" />
+                              <Metric Name="CyclomaticComplexity" Value="22" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="85" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestnewPawn() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="12" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestPiecegetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="20" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="68" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestwhitePawnTakeUpRight() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="30" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestwhitePawnTakeUpLeft() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="39" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestwhitePawnTakeForwardRight() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="48" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestwhitePawnTakeForwardLeft() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="57" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestBlackPawnGetMoves() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="66" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="68" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestBlackPawnTakeDownRight() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="74" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TesBlackPawnTakeDownLeft() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="83" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestBlackPawnTakeForwardRight() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="92" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestBlackPawnTakeForwardLeft() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="101" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetImage() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\PawnTests.cs" Line="110" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="67" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="BoardViewerTests" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="75" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="24" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSendClick() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardViewerTests.cs" Line="12" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="74" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestFixColorsNull() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardViewerTests.cs" Line="20" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="73" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestMovePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardViewerTests.cs" Line="28" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNotMovePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardViewerTests.cs" Line="47" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestBadtMovePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BoardViewerTests.cs" Line="59" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="BishopTest" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="64" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="91" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestSetup() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BishopTest.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestNewBishop() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BishopTest.cs" Line="19" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesEmpty() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BishopTest.cs" Line="26" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="51" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="28" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesWithWhitePiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BishopTest.cs" Line="35" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="50" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="29" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestGetMovesWithBlackPiece() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\BishopTest.cs" Line="46" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="49" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="30" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+               </Namespaces>
+            </Module>
+         </Modules>
+      </Target>
+      <Target Name="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\RaumschachForm.csproj">
+         <Modules>
+            <Module Name="RaumschachForm.exe" AssemblyVersion="" FileVersion="">
+               <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="84" />
+                  <Metric Name="CyclomaticComplexity" Value="367" />
+                  <Metric Name="ClassCoupling" Value="73" />
+                  <Metric Name="DepthOfInheritance" Value="7" />
+                  <Metric Name="LinesOfCode" Value="2847" />
+               </Metrics>
+               <Namespaces>
+                  <Namespace Name="RaumschachForm">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="78" />
+                        <Metric Name="CyclomaticComplexity" Value="314" />
+                        <Metric Name="ClassCoupling" Value="65" />
+                        <Metric Name="DepthOfInheritance" Value="7" />
+                        <Metric Name="LinesOfCode" Value="2780" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="Bishop" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="81" />
+                              <Metric Name="CyclomaticComplexity" Value="11" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="15" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Bishop(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Bishop.cs" Line="38" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Bishop.cs" Line="62" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="57" />
+                                    <Metric Name="CyclomaticComplexity" Value="8" />
+                                    <Metric Name="LogicalComplexity" Value="5" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="11" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Bishop.cs" Line="84" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Bishop.cs" Line="90" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Board" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="61" />
+                              <Metric Name="CyclomaticComplexity" Value="110" />
+                              <Metric Name="ClassCoupling" Value="17" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="341" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Board()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="24" />
+                                    <Metric Name="CyclomaticComplexity" Value="32" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="161" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewGame() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="64" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="37" />
+                                    <Metric Name="CyclomaticComplexity" Value="7" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="51" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MovePiece(String, String) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="137" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="62" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="addState() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="149" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Clone() : Object" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="154" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="41" />
+                                    <Metric Name="CyclomaticComplexity" Value="17" />
+                                    <Metric Name="LogicalComplexity" Value="14" />
+                                    <Metric Name="ClassCoupling" Value="13" />
+                                    <Metric Name="LinesOfCode" Value="37" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetNeighborCell(Cell, CellNeighbor) : Cell" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="196" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="51" />
+                                    <Metric Name="CyclomaticComplexity" Value="8" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="18" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="wCheck() : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="243" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="66" />
+                                    <Metric Name="CyclomaticComplexity" Value="5" />
+                                    <Metric Name="LogicalComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="bCheck() : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="257" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="66" />
+                                    <Metric Name="CyclomaticComplexity" Value="5" />
+                                    <Metric Name="LogicalComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="wCheckmate() : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="270" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="bCheckmate() : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="282" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetCellRow(String) : Int32" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="296" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="57" />
+                                    <Metric Name="CyclomaticComplexity" Value="6" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetCellCol(String) : Int32" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="321" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBoardNumber(String) : Int32" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="326" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="57" />
+                                    <Metric Name="CyclomaticComplexity" Value="6" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetCell(String) : Cell" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="351" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="IsSameOrOpposite(CellNeighbor, CellNeighbor) : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Board.cs" Line="356" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="13" />
+                                    <Metric Name="LogicalComplexity" Value="7" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="BoardViewer" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="67" />
+                              <Metric Name="CyclomaticComplexity" Value="77" />
+                              <Metric Name="ClassCoupling" Value="51" />
+                              <Metric Name="DepthOfInheritance" Value="7" />
+                              <Metric Name="LinesOfCode" Value="2255" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="BoardViewer()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="28" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="50" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="14" />
+                                    <Metric Name="LinesOfCode" Value="22" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UpdateBoard() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="59" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="5" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SelectedSquare(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="76" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="39" />
+                                    <Metric Name="CyclomaticComplexity" Value="16" />
+                                    <Metric Name="LogicalComplexity" Value="13" />
+                                    <Metric Name="ClassCoupling" Value="15" />
+                                    <Metric Name="LinesOfCode" Value="44" />
+                                    <Metric Name="NumberOfParameters" Value="5" />
+                                    <Metric Name="NumberOfLocalVariables" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="makeMove() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="143" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="fixColors(List&lt;String&gt;) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="154" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="58" />
+                                    <Metric Name="CyclomaticComplexity" Value="12" />
+                                    <Metric Name="LogicalComplexity" Value="10" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="10" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="sendClick(String) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="175" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewGame_Click(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="182" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="quitToolStripMenuItem_Click(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="194" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="checkForCheck(Object, DoWorkEventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="199" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="55" />
+                                    <Metric Name="CyclomaticComplexity" Value="7" />
+                                    <Metric Name="LogicalComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="12" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="4" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UpdateMoves(Object, DoWorkEventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="218" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="49" />
+                                    <Metric Name="CyclomaticComplexity" Value="13" />
+                                    <Metric Name="LogicalComplexity" Value="12" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="21" />
+                                    <Metric Name="NumberOfParameters" Value="6" />
+                                    <Metric Name="NumberOfLocalVariables" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="button2_Click(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="245" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="18" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="englishToolStripMenuItem_Click(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="282" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="11" />
+                                    <Metric Name="LinesOfCode" Value="15" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="fileToolStripMenuItem_DropDownOpening(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="308" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="fileToolStripMenuItem_DropDownClosed(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="313" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="languageToolStripMenuItem_DropDownOpening(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="318" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="languageToolStripMenuItem_DropDownClosed(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="323" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="buttonMouseEnter(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="328" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="buttonMouseLeave(Object, EventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="334" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="buttonMouseDown(Object, MouseEventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="340" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="buttonMouseUp(Object, MouseEventArgs) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.cs" Line="346" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Dispose(Boolean) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.Designer.cs" Line="13" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="78" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="LogicalComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="InitializeComponent() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\BoardViewer.Designer.cs" Line="28" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="0" />
+                                    <Metric Name="CyclomaticComplexity" Value="4" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="33" />
+                                    <Metric Name="LinesOfCode" Value="2068" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Cell" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="85" />
+                              <Metric Name="CyclomaticComplexity" Value="15" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="20" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Cell(String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="8" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="79" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AddPiece(Piece) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="15" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="74" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetPiece() : Piece" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="22" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetPreviousPiece() : Piece" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="27" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RestorePreviousPiece(Board) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="32" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="4" />
+                                    <Metric Name="LogicalComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetName() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="45" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="HasPiece() : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="50" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Equals(Object) : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Cell.cs" Line="54" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="LogicalComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="King" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="70" />
+                              <Metric Name="CyclomaticComplexity" Value="35" />
+                              <Metric Name="ClassCoupling" Value="12" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="49" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="King(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="32" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="56" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="64" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="47" />
+                                    <Metric Name="CyclomaticComplexity" Value="25" />
+                                    <Metric Name="LogicalComplexity" Value="20" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="20" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="109" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="IsCheck(List&lt;String&gt;, Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="113" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="52" />
+                                    <Metric Name="CyclomaticComplexity" Value="6" />
+                                    <Metric Name="LogicalComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="18" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SetMoves(Board) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\King.cs" Line="148" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="73" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Queen" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="78" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="17" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Queen(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Queen.cs" Line="26" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Queen.cs" Line="49" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="68" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Queen.cs" Line="60" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SetMoves(Board) : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Queen.cs" Line="67" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="68" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Queen.cs" Line="76" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Unicorn" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="80" />
+                              <Metric Name="CyclomaticComplexity" Value="12" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="18" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Unicorn(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Unicorn.cs" Line="34" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Unicorn.cs" Line="57" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="9" />
+                                    <Metric Name="LogicalComplexity" Value="5" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Unicorn.cs" Line="85" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Unicorn.cs" Line="92" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Knight" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="80" />
+                              <Metric Name="CyclomaticComplexity" Value="14" />
+                              <Metric Name="ClassCoupling" Value="10" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="18" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Knight(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Knight.cs" Line="25" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Knight.cs" Line="48" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="11" />
+                                    <Metric Name="LogicalComplexity" Value="8" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Knight.cs" Line="72" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Knight.cs" Line="79" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Pawn" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="80" />
+                              <Metric Name="CyclomaticComplexity" Value="12" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="18" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Pawn(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Pawn.cs" Line="37" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Pawn.cs" Line="60" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="9" />
+                                    <Metric Name="LogicalComplexity" Value="7" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="7" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Pawn.cs" Line="90" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Pawn.cs" Line="99" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Piece" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="89" />
+                              <Metric Name="CyclomaticComplexity" Value="11" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="13" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Piece.cs" Line="12" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Piece.cs" Line="13" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Piece.cs" Line="14" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Equals(Piece) : Boolean" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Piece.cs" Line="16" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="88" />
+                                    <Metric Name="CyclomaticComplexity" Value="6" />
+                                    <Metric Name="LogicalComplexity" Value="5" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="validMoves(List&lt;String&gt;, Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Piece.cs" Line="20" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="58" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="12" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Program" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="78" />
+                              <Metric Name="CyclomaticComplexity" Value="1" />
+                              <Metric Name="ClassCoupling" Value="3" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="3" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Main() : Void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Program.cs" Line="10" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="78" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Rook" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="82" />
+                              <Metric Name="CyclomaticComplexity" Value="11" />
+                              <Metric Name="ClassCoupling" Value="10" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="13" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Rook(Boolean, String)" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Rook.cs" Line="22" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="2" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetBasicMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Rook.cs" Line="45" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="60" />
+                                    <Metric Name="CyclomaticComplexity" Value="8" />
+                                    <Metric Name="LogicalComplexity" Value="5" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMoves(Board) : List&lt;String&gt;" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Rook.cs" Line="64" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="1" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetImage() : Image" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Rook.cs" Line="69" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="RaumschachForm.Properties">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="91" />
+                        <Metric Name="CyclomaticComplexity" Value="53" />
+                        <Metric Name="ClassCoupling" Value="12" />
+                        <Metric Name="DepthOfInheritance" Value="3" />
+                        <Metric Name="LinesOfCode" Value="67" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="GermanResources" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="91" />
+                              <Metric Name="CyclomaticComplexity" Value="14" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="16" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="GermanResources()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="30" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ResourceManager.get() : ResourceManager" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="37" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="72" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.get() : CultureInfo" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.set(CultureInfo) : void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="bWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="65" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Checkmate.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="74" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="File.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="83" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Language.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="92" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewGame.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="101" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="nWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="110" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player1.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="119" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player2.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="128" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Quit.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="137" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="wWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\GermanResources.Designer.cs" Line="146" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="FrenchResources" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="91" />
+                              <Metric Name="CyclomaticComplexity" Value="14" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="16" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="FrenchResources()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="30" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ResourceManager.get() : ResourceManager" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="37" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="72" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.get() : CultureInfo" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.set(CultureInfo) : void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="bWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="65" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Checkmate.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="74" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="File.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="83" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Language.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="92" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewGame.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="101" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="nWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="110" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player1.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="119" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player2.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="128" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Quit.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="137" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="wWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\FrenchResources.Designer.cs" Line="146" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Resources" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="85" />
+                              <Metric Name="CyclomaticComplexity" Value="10" />
+                              <Metric Name="ClassCoupling" Value="7" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="18" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Resources()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="30" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ResourceManager.get() : ResourceManager" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="37" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="72" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.get() : CultureInfo" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.set(CultureInfo) : void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="BlackSteel.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="65" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RaumschachLogo.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="75" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Steel.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="85" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SteelDark.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="95" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SteelLight.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="105" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="woodAndLogo.get() : Bitmap" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Resources.Designer.cs" Line="115" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="EnglishResources" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="91" />
+                              <Metric Name="CyclomaticComplexity" Value="14" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="16" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="EnglishResources()" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="30" Kind="Method">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ResourceManager.get() : ResourceManager" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="37" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="72" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.get() : CultureInfo" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Culture.set(CultureInfo) : void" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="52" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="bWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="65" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Checkmate.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="74" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="File.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="83" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Language.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="92" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewGame.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="101" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="nWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="110" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player1.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="119" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Player2.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="128" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Quit.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="137" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="wWinner.get() : String" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\EnglishResources.Designer.cs" Line="146" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Settings" Kind="Class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="95" />
+                              <Metric Name="CyclomaticComplexity" Value="1" />
+                              <Metric Name="ClassCoupling" Value="2" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="1" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Default.get() : Settings" File="C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\Properties\Settings.Designer.cs" Line="21" Kind="Property">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="LogicalComplexity" Value="0" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                    <Metric Name="NumberOfParameters" Value="0" />
+                                    <Metric Name="NumberOfLocalVariables" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+               </Namespaces>
+            </Module>
+         </Modules>
+      </Target>
+   </Targets>
+</CodeMetricsReport>
