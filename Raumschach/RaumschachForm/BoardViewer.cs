@@ -20,6 +20,7 @@ namespace RaumschachForm
         List<string> currentMoves = new List<string>();
         private bool moveWhite;
         private BackgroundWorker bworker;
+        private BackgroundWorker bworker2;
         private bool wCheck = false;
         private bool bCheck = false;
         ResourceManager rm;
@@ -49,7 +50,10 @@ namespace RaumschachForm
             //
 
             bworker = new BackgroundWorker();
+            bworker2 = new BackgroundWorker();
+            bworker.DoWork += new DoWorkEventHandler(checkForCheck);
             bworker.DoWork += new DoWorkEventHandler(UpdateMoves);
+            bworker2.RunWorkerAsync();
             bworker.RunWorkerAsync();
         }
 
@@ -145,7 +149,7 @@ namespace RaumschachForm
             lblPlayer1.BackColor = lblPlayer2.BackColor;
             lblPlayer2.BackColor = color;
             currentMoves = new List<string>();
-            //if (!bworker.IsBusy) bworker.RunWorkerAsync();
+            if (!bworker2.IsBusy) bworker2.RunWorkerAsync();
         }
 
         public void fixColors(List<string> moves )
@@ -193,31 +197,10 @@ namespace RaumschachForm
             Close();
         }
 
-        private void UpdateMoves(object sender, DoWorkEventArgs e)
+        private void checkForCheck(object sender, DoWorkEventArgs e)
         {
             var bKing = _board._blackPieces.Find(c => c.GetType() == typeof(King));
             var wKing = _board._whitePieces.Find(c => c.GetType() == typeof(King));
-           
-
-            //if (moveWhite)
-            //{
-            //    var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
-            //    if (wQueen != null ) ((Queen)wQueen).movesSet = false;
-            //    if (wKing != null) ((King)wKing).movesSet = false;
-
-            //    if (wQueen != null) ((Queen)wQueen).SetMoves(_board);
-            //    if (wKing != null) ((King)wKing).SetMoves(_board);
-
-            //}
-            //else
-            //{
-            //    var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
-            //    if (bQueen != null) ((Queen)bQueen).movesSet = false;
-            //    if (bKing != null) ((King)bKing).movesSet = false;
-
-            //    if (bQueen != null) ((Queen)bQueen).SetMoves(_board);
-            //    if (bKing != null) ((King)bKing).SetMoves(_board);
-            //}
 
             while (true)
             {
@@ -231,6 +214,33 @@ namespace RaumschachForm
 
             }
 
+        }
+
+        private void UpdateMoves(object sender, DoWorkEventArgs e)
+        {
+            var bKing = _board._blackPieces.Find(c => c.GetType() == typeof(King));
+            var wKing = _board._whitePieces.Find(c => c.GetType() == typeof(King));
+
+
+            if (moveWhite)
+            {
+                var wQueen = _board._whitePieces.Find(b => b.GetType() == typeof(Queen));
+                if (wQueen != null) ((Queen)wQueen).movesSet = false;
+                if (wKing != null) ((King)wKing).movesSet = false;
+
+                if (wQueen != null) ((Queen)wQueen).SetMoves(_board);
+                if (wKing != null) ((King)wKing).SetMoves(_board);
+
+            }
+            else
+            {
+                var bQueen = _board._blackPieces.Find(d => d.GetType() == typeof(Queen));
+                if (bQueen != null) ((Queen)bQueen).movesSet = false;
+                if (bKing != null) ((King)bKing).movesSet = false;
+
+                if (bQueen != null) ((Queen)bQueen).SetMoves(_board);
+                if (bKing != null) ((King)bKing).SetMoves(_board);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

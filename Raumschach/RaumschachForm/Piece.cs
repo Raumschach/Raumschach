@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 
 namespace RaumschachForm
 {
@@ -21,7 +22,6 @@ namespace RaumschachForm
         {
             List<string> finalmoves = new List<string>();
             string origin=this.CurrentPos;
-            
 
             foreach (var mv in possibleMoves)
             {

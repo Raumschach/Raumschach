@@ -159,25 +159,25 @@ namespace RaumschachForm
             {
                 foreach (var p in this._blackPieces)
                 {
+                    if (p.GetType() == typeof(Pawn)) board._blackPieces.Add(new Pawn(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(King)) board._blackPieces.Add(new King(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(Queen)) board._blackPieces.Add(new Queen(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(Unicorn)) board._blackPieces.Add(new Unicorn(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(Bishop)) board._blackPieces.Add(new Bishop(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(Knight)) board._blackPieces.Add(new Knight(p.White, p.CurrentPos));
                     if (p.GetType() == typeof(Rook)) board._blackPieces.Add(new Rook(p.White, p.CurrentPos));
-                    if (p.GetType() == typeof(Pawn)) board._blackPieces.Add(new Pawn(p.White, p.CurrentPos));
+                    
 
                 }
                 foreach (var q in this._whitePieces)
                 {
+                    if (q.GetType() == typeof(Pawn)) board._whitePieces.Add(new Pawn(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(King)) board._whitePieces.Add(new King(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(Queen)) board._whitePieces.Add(new Queen(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(Unicorn)) board._whitePieces.Add(new Unicorn(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(Bishop)) board._whitePieces.Add(new Bishop(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(Knight)) board._whitePieces.Add(new Knight(q.White, q.CurrentPos));
                     if (q.GetType() == typeof(Rook)) board._whitePieces.Add(new Rook(q.White, q.CurrentPos));
-                    if (q.GetType() == typeof(Pawn)) board._whitePieces.Add(new Pawn(q.White, q.CurrentPos));
-
                 }
             }
             catch { 

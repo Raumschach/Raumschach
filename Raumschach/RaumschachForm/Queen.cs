@@ -68,7 +68,6 @@ namespace RaumschachForm
         public void SetMoves(Board board)
         {
             movesList = new List<string>();
-
             movesList.AddRange((new Rook(this.White, this.CurrentPos)).GetMoves(board));
             movesList.AddRange((new Bishop(this.White, this.CurrentPos)).GetMoves(board));
             movesList.AddRange((new Unicorn(this.White, this.CurrentPos)).GetMoves(board));
