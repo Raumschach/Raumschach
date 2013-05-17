@@ -20,37 +20,11 @@ namespace RaumschachForm
             };
         private List<Board.CellNeighbor> smallList = new List<Board.CellNeighbor>{Board.CellNeighbor.Up,Board.CellNeighbor.Down};
 
-
-        #if (!MYTEST)
-            public readonly Image BlackUnicorn = Image.FromFile
-                (Environment.CurrentDirectory + @"\Images\UnicornB.png"); 
-
-            public readonly Image WhiteUnicorn = Image.FromFile(Environment.CurrentDirectory + @"\Images\UnicornW.png"); 
-        #endif
-        #if (MYTEST)
-                            public readonly Image BlackUnicorn;
-                    public readonly Image WhiteUnicorn;
-        #endif
+        public readonly Image BlackUnicorn = global::RaumschachForm.Properties.Resources.UnicornB;
+        public readonly Image WhiteUnicorn = global::RaumschachForm.Properties.Resources.UnicornW; 
 
         public Unicorn(bool white, string currentPos)
         {
-        #if (MYTEST)
-                    var folder = Environment.SpecialFolder.MyDocuments;
-                    if (folder.ToString().Contains("iversoda"))
-                    {
-                        BlackUnicorn = Image.FromFile
-                         (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
-                        WhiteUnicorn = Image.FromFile
-                        (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
-                    }
-                    if (folder.ToString().Contains("sternetj"))
-                    {
-                        BlackUnicorn = Image.FromFile
-                         (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornB.png");
-                        WhiteUnicorn = Image.FromFile
-                        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\UnicornW.png");
-                    }
-        #endif
             White = white;
             CurrentPos = currentPos;
         }

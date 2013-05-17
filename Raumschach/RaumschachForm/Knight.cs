@@ -11,37 +11,12 @@ namespace RaumschachForm
     //It's the Dark Knight
     public class Knight: Piece
     {
+        public readonly Image BlackKnight = global::RaumschachForm.Properties.Resources.KnightB; //Bruce Wayne
+        public readonly Image WhiteKnight = global::RaumschachForm.Properties.Resources.KnightW; //Harvey Two Face
 
-        #if (!MYTEST)
-                public readonly Image BlackKnight = Image.FromFile
-                    (Environment.CurrentDirectory + @"\Images\KnightB.png"); //Bruce Wayne
-
-                public readonly Image WhiteKnight = Image.FromFile(Environment.CurrentDirectory + @"\Images\KnightW.png"); //THarvey Two Face
-                #endif
-                #if (MYTEST)
-                            public readonly Image BlackKnight;
-                    public readonly Image WhiteKnight;
-        #endif
 
         public Knight(bool white, string currentPos)
         {
-            #if (MYTEST)
-                        var folder = Environment.SpecialFolder.MyDocuments;
-                        if (folder.ToString().Contains("iversoda"))
-                        {
-                            BlackKnight = Image.FromFile
-                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
-                            WhiteKnight = Image.FromFile
-                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
-                        }
-                        if (folder.ToString().Contains("sternetj"))
-                        {
-                            BlackKnight = Image.FromFile
-                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightB.png");
-                            WhiteKnight = Image.FromFile
-                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KnightW.png");
-                        }
-            #endif
             White = white;
             CurrentPos = currentPos;
         }

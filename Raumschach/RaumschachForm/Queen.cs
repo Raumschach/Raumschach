@@ -13,36 +13,12 @@ namespace RaumschachForm
         public List<string> movesList;
         public bool movesSet = false;
 
-        #if (!MYTEST)
-        public readonly Image BlackQueen = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\QueenB.png"); 
+        public readonly Image BlackQueen = global::RaumschachForm.Properties.Resources.QueenB;
+        public readonly Image WhiteQueen = global::RaumschachForm.Properties.Resources.QueenW;
 
-        public readonly Image WhiteQueen = Image.FromFile(Environment.CurrentDirectory + @"\Images\QueenW.png"); 
-        #endif
-        #if (MYTEST)
-                    public readonly Image BlackQueen;
-            public readonly Image WhiteQueen;
-        #endif
 
         public Queen(bool white, string currentPos)
         {
-            #if (MYTEST)
-                        var folder = Environment.SpecialFolder.MyDocuments;
-                        if (folder.ToString().Contains("iversoda"))
-                        {
-                            BlackQueen = Image.FromFile
-                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
-                            WhiteQueen = Image.FromFile
-                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
-                        }
-                        if (folder.ToString().Contains("sternetj"))
-                        {
-                            BlackQueen = Image.FromFile
-                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenB.png");
-                            WhiteQueen = Image.FromFile
-                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\QueenW.png");
-                        }
-            #endif
             White = white;
             CurrentPos = currentPos;
         }

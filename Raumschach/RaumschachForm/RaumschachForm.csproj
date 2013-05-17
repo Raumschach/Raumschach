@@ -137,6 +137,51 @@
   <ItemGroup>
     <None Include="Resources\BlackSteel.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BishopB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BishopW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KingB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KingW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KnightB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KnightW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PawnB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PawnW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QueenB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QueenW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RookB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RookW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnicornB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnicornW.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

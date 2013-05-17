@@ -9,36 +9,11 @@ namespace RaumschachForm
 {
     public class Rook : Piece
     {
-#if (!MYTEST)
-        public readonly Image BlackRook = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\RookB.png");
-
-        public readonly Image WhiteRook = Image.FromFile(Environment.CurrentDirectory + @"\Images\RookW.png");
-#endif
-#if (MYTEST)
-                public readonly Image BlackRook;
-        public readonly Image WhiteRook;
-#endif
+        public readonly Image BlackRook = global::RaumschachForm.Properties.Resources.RookB;
+        public readonly Image WhiteRook = global::RaumschachForm.Properties.Resources.RookW;
 
         public Rook(bool white, string currentPos)
         {
-            #if (MYTEST)
-                        var folder = Environment.SpecialFolder.MyDocuments;
-                        if (folder.ToString().Contains("iversoda"))
-                        {
-                            BlackRook = Image.FromFile
-                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookB.png");
-                            WhiteRook = Image.FromFile
-                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookW.png");
-                        }
-                        if (folder.ToString().Contains("sternetj"))
-                        {
-                            BlackRook = Image.FromFile
-                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookB.png");
-                            WhiteRook = Image.FromFile
-                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\RookW.png");
-                        }
-            #endif
             White = white;
             CurrentPos = currentPos;
         }

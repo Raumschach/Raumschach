@@ -25,35 +25,12 @@ namespace RaumschachForm
                 { Board.CellNeighbor.Forward, Board.CellNeighbor.Right},
                 { Board.CellNeighbor.Forward, Board.CellNeighbor.Left}
             };
-        #if (MYTEST)
-                public readonly Image BlackPawn = Image.FromFile
-                    (Environment.CurrentDirectory + @"\Images\PawnB.png");
 
-                public readonly Image WhitePawn = Image.FromFile(Environment.CurrentDirectory + @"\Images\PawnW.png");
-        #endif
-        #if (!MYTEST)
-                public readonly Image BlackPawn;
-                public readonly Image WhitePawn;
-        #endif
+        public readonly Image BlackPawn = global::RaumschachForm.Properties.Resources.PawnB;
+        public readonly Image WhitePawn = global::RaumschachForm.Properties.Resources.PawnW;
+
         public Pawn(bool white, string currentPos)
         {
-        #if (!MYTEST)
-                    var folder = Environment.SpecialFolder.MyDocuments;
-                    if (folder.ToString().Contains("iversoda"))
-                    {
-                        BlackPawn = Image.FromFile
-                         (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
-                        WhitePawn = Image.FromFile
-                        (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
-                    }
-                    if (folder.ToString().Contains("sternetj"))
-                    {
-                        BlackPawn = Image.FromFile
-                         (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnB.png");
-                        WhitePawn = Image.FromFile
-                        (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\PawnW.png");
-                    }
-        #endif
             White = white;
             CurrentPos = currentPos;
         }

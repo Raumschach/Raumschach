@@ -20,36 +20,12 @@ namespace RaumschachForm
 
             };
         private List<Board.CellNeighbor> smallList = new List<Board.CellNeighbor>{Board.CellNeighbor.Up,Board.CellNeighbor.Down};
-        #if (MYTEST)
-                public readonly Image BlackKing = Image.FromFile
-                    (Environment.CurrentDirectory + @"\Images\KingB.png");
 
-                public readonly Image WhiteKing = Image.FromFile(Environment.CurrentDirectory + @"\Images\KingW.png");
-        #endif
-        #if (!MYTEST)
-                public readonly Image BlackKing;
-                public readonly Image WhiteKing;
-        #endif
+        public readonly Image BlackKing = global::RaumschachForm.Properties.Resources.KingB;
+        public readonly Image WhiteKing = global::RaumschachForm.Properties.Resources.KingW;
+
         public King(bool white, string currentPos)
         {
-            #if (!MYTEST)
-                        var folder = Environment.SpecialFolder.MyDocuments;
-                        if (folder.ToString().Contains("iversoda"))
-                        {
-                            BlackKing = Image.FromFile
-                             (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KingB.png");
-                            WhiteKing = Image.FromFile
-                            (@"C:\Users\iversoda\Documents\SQA\Project\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KingW.png");
-                        }
-                        if (folder.ToString().Contains("sternetj"))
-                        {
-                            BlackKing = Image.FromFile
-                             (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KingB.png");
-                            WhiteKing = Image.FromFile
-                            (@"C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachForm\bin\Debug\Images\KingW.png");
-                        }
-            #endif
-
             White = white;
             CurrentPos = currentPos;
         }
