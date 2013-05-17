@@ -20,19 +20,19 @@ namespace RaumschachForm
 
             };
         private List<Board.CellNeighbor> smallList = new List<Board.CellNeighbor>{Board.CellNeighbor.Up,Board.CellNeighbor.Down};
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                 public readonly Image BlackKing = Image.FromFile
                     (Environment.CurrentDirectory + @"\Images\KingB.png");
 
                 public readonly Image WhiteKing = Image.FromFile(Environment.CurrentDirectory + @"\Images\KingW.png");
         #endif
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
                 public readonly Image BlackKing;
                 public readonly Image WhiteKing;
         #endif
         public King(bool white, string currentPos)
         {
-            #if (DEBUG && !MYTEST)
+            #if (!MYTEST)
                         var folder = Environment.SpecialFolder.MyDocuments;
                         if (folder.ToString().Contains("iversoda"))
                         {

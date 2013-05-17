@@ -13,20 +13,20 @@ namespace RaumschachForm
         public List<string> movesList;
         public bool movesSet = false;
 
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
         public readonly Image BlackQueen = Image.FromFile
             (Environment.CurrentDirectory + @"\Images\QueenB.png"); 
 
         public readonly Image WhiteQueen = Image.FromFile(Environment.CurrentDirectory + @"\Images\QueenW.png"); 
         #endif
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                     public readonly Image BlackQueen;
             public readonly Image WhiteQueen;
         #endif
 
         public Queen(bool white, string currentPos)
         {
-            #if (DEBUG && MYTEST)
+            #if (MYTEST)
                         var folder = Environment.SpecialFolder.MyDocuments;
                         if (folder.ToString().Contains("iversoda"))
                         {

@@ -21,20 +21,20 @@ namespace RaumschachForm
         private List<Board.CellNeighbor> smallList = new List<Board.CellNeighbor>{Board.CellNeighbor.Up,Board.CellNeighbor.Down};
 
 
-#if (DEBUG && !MYTEST)
-        public readonly Image BlackUnicorn = Image.FromFile
-            (Environment.CurrentDirectory + @"\Images\UnicornB.png"); 
+        #if (!MYTEST)
+            public readonly Image BlackUnicorn = Image.FromFile
+                (Environment.CurrentDirectory + @"\Images\UnicornB.png"); 
 
-        public readonly Image WhiteUnicorn = Image.FromFile(Environment.CurrentDirectory + @"\Images\UnicornW.png"); 
+            public readonly Image WhiteUnicorn = Image.FromFile(Environment.CurrentDirectory + @"\Images\UnicornW.png"); 
         #endif
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                             public readonly Image BlackUnicorn;
                     public readonly Image WhiteUnicorn;
         #endif
 
         public Unicorn(bool white, string currentPos)
         {
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                     var folder = Environment.SpecialFolder.MyDocuments;
                     if (folder.ToString().Contains("iversoda"))
                     {

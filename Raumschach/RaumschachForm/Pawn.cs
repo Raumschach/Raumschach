@@ -25,19 +25,19 @@ namespace RaumschachForm
                 { Board.CellNeighbor.Forward, Board.CellNeighbor.Right},
                 { Board.CellNeighbor.Forward, Board.CellNeighbor.Left}
             };
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                 public readonly Image BlackPawn = Image.FromFile
                     (Environment.CurrentDirectory + @"\Images\PawnB.png");
 
                 public readonly Image WhitePawn = Image.FromFile(Environment.CurrentDirectory + @"\Images\PawnW.png");
         #endif
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
                 public readonly Image BlackPawn;
                 public readonly Image WhitePawn;
         #endif
         public Pawn(bool white, string currentPos)
         {
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
                     var folder = Environment.SpecialFolder.MyDocuments;
                     if (folder.ToString().Contains("iversoda"))
                     {

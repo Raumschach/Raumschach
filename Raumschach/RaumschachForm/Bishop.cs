@@ -25,20 +25,20 @@ namespace RaumschachForm
                 { Board.CellNeighbor.Backward, Board.CellNeighbor.Up},
                 { Board.CellNeighbor.Backward, Board.CellNeighbor.Down}
             };
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
                 public readonly Image BlackBishop = Image.FromFile
                     (Environment.CurrentDirectory + @"\Images\BishopB.png");
 
                 public readonly Image WhiteBishop = Image.FromFile(Environment.CurrentDirectory + @"\Images\BishopW.png");
         #endif
-        #if (DEBUG && MYTEST)
+        #if (MYTEST)
                         public readonly Image BlackBishop;
                 public readonly Image WhiteBishop;
         #endif
 
         public Bishop(bool white, string currentPos)
         {
-            #if (DEBUG && MYTEST)
+            #if (MYTEST)
                         var folder = Environment.SpecialFolder.MyDocuments;
                         if (folder.ToString().Contains("iversoda"))
                         {

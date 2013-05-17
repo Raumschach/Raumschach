@@ -12,20 +12,20 @@ namespace RaumschachForm
     public class Knight: Piece
     {
 
-        #if (DEBUG && !MYTEST)
+        #if (!MYTEST)
                 public readonly Image BlackKnight = Image.FromFile
                     (Environment.CurrentDirectory + @"\Images\KnightB.png"); //Bruce Wayne
 
                 public readonly Image WhiteKnight = Image.FromFile(Environment.CurrentDirectory + @"\Images\KnightW.png"); //THarvey Two Face
                 #endif
-                #if (DEBUG && MYTEST)
+                #if (MYTEST)
                             public readonly Image BlackKnight;
                     public readonly Image WhiteKnight;
         #endif
 
         public Knight(bool white, string currentPos)
         {
-            #if (DEBUG && MYTEST)
+            #if (MYTEST)
                         var folder = Environment.SpecialFolder.MyDocuments;
                         if (folder.ToString().Contains("iversoda"))
                         {

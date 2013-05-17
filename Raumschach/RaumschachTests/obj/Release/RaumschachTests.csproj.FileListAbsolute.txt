@@ -1,0 +1,9 @@
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Release\RaumschachTests.csprojResolveAssemblyReference.cache
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\RaumschachTests.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\RaumschachTests.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\nunit.framework.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\RaumschachForm.exe
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\RaumschachForm.pdb
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\bin\Release\nunit.framework.xml
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Release\RaumschachTests.dll
+C:\Users\sternetj\Documents\GitHub\Raumschach\Raumschach\RaumschachTests\obj\Release\RaumschachTests.pdb

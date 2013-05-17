@@ -9,20 +9,20 @@ namespace RaumschachForm
 {
     public class Rook : Piece
     {
-#if (DEBUG && !MYTEST)
+#if (!MYTEST)
         public readonly Image BlackRook = Image.FromFile
             (Environment.CurrentDirectory + @"\Images\RookB.png");
 
         public readonly Image WhiteRook = Image.FromFile(Environment.CurrentDirectory + @"\Images\RookW.png");
 #endif
-#if (DEBUG && MYTEST)
+#if (MYTEST)
                 public readonly Image BlackRook;
         public readonly Image WhiteRook;
 #endif
 
         public Rook(bool white, string currentPos)
         {
-            #if (DEBUG && MYTEST)
+            #if (MYTEST)
                         var folder = Environment.SpecialFolder.MyDocuments;
                         if (folder.ToString().Contains("iversoda"))
                         {
